@@ -3,8 +3,8 @@ import Footer from "./Footer";
 import "./globals.css";
 
 export const metadata = {
-  title: "AURA — Architectural Design Studio",
-  description: "Designing spaces that breathe.",
+  title: "Tanha",
+  description: "will add soon",
 };
 
 export default function RootLayout({ children }) {
