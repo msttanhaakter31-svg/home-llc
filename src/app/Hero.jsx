@@ -1,52 +1,71 @@
 import Image from "next/image";
+import { Nunito, Lato } from "next/font/google";
+
+const nunito = Nunito({
+  subsets: ["latin"],
+  weight: ["700"],
+});
+
+const lato = Lato({
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 export default function Hero() {
   return (
-    <section className="w-full bg-[#fcfcfc] py-16 md:py-24 border-b border-gray-100">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        {/* Left Column: Text Content */}
-        <div className="lg:col-span-7 space-y-8">
-          {/* Subtitle / Category */}
-          <div className="flex items-center space-x-2">
-            <span className="w-6 h-[1px] bg-black"></span>
-            <span className="text-xs uppercase tracking-widest font-medium text-gray-500">
-              Architecture & Living
-            </span>
-          </div>
+    <section className="relative w-full bg-[#f8f9fa] py-16 md:py-20 overflow-hidden">
+      {/* Background wave pattern */}
+      <div className="absolute inset-0 pointer-events-none opacity-40">
+        <Image
+          src="/image_bg.png"
+          alt="Background Lines Pattern"
+          fill
+          className="object-cover object-left"
+          priority
+        />
+      </div>
 
-          {/* Main Heading */}
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-light text-black leading-[1.1] tracking-tight">
-            Designing <br />
-            spaces that <br />
-            <span className="font-serif italic font-normal">breathe.</span>
-          </h1>
-
-          {/* Description */}
-          <p className="text-gray-600 text-base md:text-lg max-w-lg leading-relaxed">
-            We strip away the non-essential to construct environments
-            characterized by clarity, purpose, and enduring light.
-          </p>
-
-          {/* Action Buttons */}
-          <div className="flex flex-wrap items-center gap-6 pt-2">
-            <a
-              href="#contact"
-              className="bg-black text-white text-sm px-7 py-3.5 rounded-full hover:bg-gray-800 transition-colors"
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          {/* Left Column: Content */}
+          <div className="lg:col-span-6 space-y-6">
+            <h2
+              className={`${nunito.className} text-[28px] text-black leading-tight`}
             >
-              Let's Talk
-            </a>
-          </div>
-        </div>
+              Learn how to Grow a Fueled <br className="hidden sm:inline" />
+              Marketing Agency
+            </h2>
 
-        {/* Right Column: Hero Image */}
-        <div className="lg:col-span-5 relative h-[480px] sm:h-[560px] w-full rounded-2xl overflow-hidden shadow-sm">
-          <Image
-            src="/hero-image.png"
-            alt="Minimalist modern interior with wooden kitchen island and pendant lights"
-            fill
-            priority
-            className="object-cover"
-          />
+            <p
+              className={`${lato.className} text-[18px] text-[#677294] leading-[1.6em] pb-2 max-w-md`}
+            >
+              Want this tailored to a specific tone (fun, luxury, tech-savvy,
+              etc.) or for a specific audience (startup agencies, B2B-focused,
+              etc.)? Hire Lets Make It Digital!
+            </p>
+
+            <div>
+              <a
+                href="#contact"
+                className="inline-block bg-[#FF8A73] text-white text-[18px] sm:text-[20px] font-bold px-[28px] py-[14px] rounded-lg shadow-[0_10px_20px_rgba(0,0,0,0.15)] hover:opacity-90 transition-opacity"
+              >
+                Schedule Your Discovery Call
+              </a>
+            </div>
+          </div>
+
+          {/* Right Column: Hero Illustration Image */}
+          <div className="lg:col-span-6 flex justify-center lg:justify-end">
+            <div className="relative w-full max-w-[540px] aspect-[4/3]">
+              <Image
+                src="/home.png"
+                alt="Growth marketing illustration"
+                fill
+                priority
+                className="object-contain"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
