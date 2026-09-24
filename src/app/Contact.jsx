@@ -11,7 +11,9 @@ export default function Contact() {
 
     const formData = new FormData(event.target);
     // Web3Forms Access Key
-    formData.append("access_key", "57b7eb44-4a37-42be-bd55-4a2c6a1642a1");
+    formData.append("access_key", "e20acabc-de27-4de8-a0a9-967e0e1415ec");
+    formData.append("subject", "New Inquiry from Castle Home LLC Website");
+    formData.append("from_name", "Castle Home LLC Web Portal");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {

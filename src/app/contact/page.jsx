@@ -37,27 +37,28 @@ export default function ContactPage() {
     setResult("Sending your message...");
 
     const formData = new FormData();
-    formData.append("access_key", "57b7eb44-4a37-42be-bd55-4a2c6a1642a1");
-    formData.append("Form Type", "General Contact Inquiry");
+    formData.append("access_key", "e20acabc-de27-4de8-a0a9-967e0e1415ec");
+    formData.append("subject", `New General Contact Inquiry: ${firstName} ${lastName}`.trim());
+    formData.append("from_name", "Castle Home LLC Web Portal");
+    formData.append("replyto", email);
+
+    formData.append("Inquiry Type", "General Contact Inquiry");
     formData.append("First Name", firstName);
     formData.append("Last Name", lastName);
     formData.append("Full Name", `${firstName} ${lastName}`.trim());
-    formData.append("Email", email);
-    if (phone) {
-      formData.append("Phone Number", phone);
-    }
-    if (message) {
-      formData.append("Message", message);
-    }
+    formData.append("Client Email", email);
+    formData.append("Phone Number", phone ? phone : "Not provided");
+    formData.append("Message", message ? message : "No message entered");
 
     formData.append(
       "Transactional SMS Consent",
-      agreeTransactional ? "Accepted" : "Declined"
+      agreeTransactional ? "Accepted (Opt-in)" : "Declined"
     );
     formData.append(
       "Marketing SMS Consent",
-      agreeMarketing ? "Accepted" : "Declined"
+      agreeMarketing ? "Accepted (Opt-in)" : "Declined"
     );
+    formData.append("Submission Page", "https://castlehomellc.com/contact");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
