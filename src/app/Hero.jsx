@@ -60,7 +60,7 @@ export default function Hero() {
             {/* Pill-shaped consultation button */}
             <div className="pt-2">
               <a
-                href="/contact?mode=consultation"
+                href="/consultation"
                 className={`${nunito.className} inline-block bg-[#da7932] hover:bg-[#c36522] text-white text-[16px] sm:text-[17px] font-bold px-8 py-3.5 rounded-full shadow-md hover:shadow-lg transition-all duration-200 active:scale-[0.98]`}
               >
                 Request a Property Consultation
