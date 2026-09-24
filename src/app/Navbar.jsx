@@ -19,7 +19,7 @@ export default function Navbar() {
         {/* Brand Logo Image (Left) */}
         <Link
           href="/"
-          className="relative w-28 h-24 sm:w-36 sm:h-28 md:w-44 md:h-32 block shrink-0"
+          className="relative w-36 h-28 sm:w-44 sm:h-32 md:w-56 md:h-40 lg:w-64 lg:h-44 block shrink-0"
         >
           <Image
             src="/logo-transparent.png"
@@ -31,22 +31,22 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Navigation Links */}
-        <div className="hidden md:flex items-center space-x-1 text-base text-gray-800 font-medium">
+        <div className="hidden md:flex items-center space-x-2 text-[17px] text-gray-900 font-bold">
           <Link
             href="/"
-            className="px-[20px] py-[5px] hover:text-black transition-all duration-300 ease-in-out"
+            className="px-[20px] py-[6px] hover:text-[#da7932] transition-all duration-300 ease-in-out"
           >
             Home
           </Link>
           <Link
             href="/about"
-            className="px-[20px] py-[5px] hover:text-black transition-all duration-300 ease-in-out"
+            className="px-[20px] py-[6px] hover:text-[#da7932] transition-all duration-300 ease-in-out"
           >
             About
           </Link>
           <Link
             href="/contact"
-            className="px-[20px] py-[5px] hover:text-black transition-all duration-300 ease-in-out"
+            className="px-[20px] py-[6px] hover:text-[#da7932] transition-all duration-300 ease-in-out"
           >
             Contact
           </Link>
@@ -99,21 +99,21 @@ export default function Navbar() {
           <Link
             href="/"
             onClick={() => setIsOpen(false)}
-            className="block text-gray-800 hover:text-black font-medium py-2 text-center"
+            className="block text-gray-900 hover:text-[#da7932] font-bold py-2 text-center text-lg"
           >
             Home
           </Link>
           <Link
             href="/about"
             onClick={() => setIsOpen(false)}
-            className="block text-gray-800 hover:text-black font-medium py-2 text-center"
+            className="block text-gray-900 hover:text-[#da7932] font-bold py-2 text-center text-lg"
           >
             About
           </Link>
           <Link
             href="/contact"
             onClick={() => setIsOpen(false)}
-            className="block text-gray-800 hover:text-black font-medium py-2 text-center"
+            className="block text-gray-900 hover:text-[#da7932] font-bold py-2 text-center text-lg"
           >
             Contact
           </Link>

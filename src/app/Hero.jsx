@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Nunito, Lato } from "next/font/google";
 
 const nunito = Nunito({
@@ -67,34 +66,11 @@ export default function Hero() {
                 Request a Property Consultation
               </a>
             </div>
-
-            {/* SMS & Legal Disclaimer directly below button */}
-            <p
-              className={`${lato.className} text-[11px] sm:text-xs text-gray-500 leading-normal max-w-lg pt-1`}
-            >
-              By providing your phone number, you consent to receive message
-              updates from Castle Home LLC. Msg &amp; data rates may apply. Reply
-              STOP to opt-out. View our{" "}
-              <Link
-                href="/privacy"
-                className="underline hover:text-black font-medium"
-              >
-                Privacy Policy
-              </Link>{" "}
-              &amp;{" "}
-              <Link
-                href="/terms"
-                className="underline hover:text-black font-medium"
-              >
-                Terms
-              </Link>
-              .
-            </p>
           </div>
 
           {/* Right Column: Hero Illustration Image */}
-          <div className="lg:col-span-6 flex justify-center lg:justify-end items-center">
-            <div className="relative w-full max-w-[650px] lg:max-w-[720px] aspect-[976/730]">
+          <div className="lg:col-span-6 flex justify-center lg:justify-end items-center -mt-4 sm:-mt-6 lg:-mt-12">
+            <div className="relative w-full max-w-[700px] lg:max-w-[780px] xl:max-w-[820px] aspect-[976/730] -translate-y-2 lg:-translate-y-4">
               <Image
                 src="/home.svg"
                 alt="Castle Home LLC Real Estate Solutions"
