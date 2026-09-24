@@ -3,6 +3,7 @@ import Footer from "./Footer";
 import "./globals.css";
 
 export const metadata = {
+  metadataBase: new URL("https://castlehomellc.com"),
   title: "Castle Home LLC",
   description: "Castle Home LLC - Dedicated to Quality, Trust, and Professional Excellence.",
   icons: {

@@ -15,16 +15,15 @@ export default function Footer() {
             <p>
               <strong className="font-semibold text-black">Email: </strong>
               <a
-                href="mailto:info@letsmakeitdigital.com"
+                href="mailto:invest@castlehomellc.com"
                 className="text-[#5282c0] hover:underline"
               >
-                info@letsmakeitdigital.com
+                invest@castlehomellc.com
               </a>
             </p>
             <div className="pt-2">
               <p className="font-semibold text-black">Address</p>
-              <p className="text-gray-600">123 West 14th st</p>
-              <p className="text-gray-600">New York, NY 10001</p>
+              <p className="text-gray-600">4539 N 22nd St, Ste N</p>
             </div>
           </div>
         </div>
@@ -42,7 +41,11 @@ export default function Footer() {
             </div>
             <div>
               <p className="font-semibold text-black">Phone Number:</p>
-              <p>917-345-6789</p>
+              <p>
+                <a href="tel:6232123077" className="hover:underline text-gray-700">
+                  (623)-212-3077
+                </a>
+              </p>
             </div>
           </div>
         </div>
@@ -51,7 +54,7 @@ export default function Footer() {
         <div className="w-full h-48 rounded-md overflow-hidden border border-gray-200 shadow-sm relative">
           <iframe
             title="Google Maps Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.617541280387!2d-73.99767802342596!3d40.73801897138965!2m3!1f0!f0!3f0!2m3!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2599f365313a1%3A0x6b801452427f7f32!2sW%2014th%20St%2C%20New%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+            src="https://maps.google.com/maps?q=4539+N+22nd+St,+Ste+N&t=&z=14&ie=UTF8&iwloc=&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -70,8 +73,7 @@ export default function Footer() {
             <span className="text-base">📍</span>
             <div>
               <p className="font-semibold">Office:</p>
-              <p className="opacity-90">123 West 14th st</p>
-              <p className="opacity-90">New York, NY 10001</p>
+              <p className="opacity-90">4539 N 22nd St, Ste N</p>
             </div>
           </div>
 
@@ -80,8 +82,8 @@ export default function Footer() {
             <span className="text-base">📞</span>
             <p>
               <span className="font-semibold">Call </span>
-              <a href="tel:9173456789" className="hover:underline">
-                917-345-6789
+              <a href="tel:6232123077" className="hover:underline">
+                (623)-212-3077
               </a>
             </p>
           </div>
@@ -92,10 +94,10 @@ export default function Footer() {
             <p>
               <span className="font-semibold">Email: </span>
               <a
-                href="mailto:info@letsmakeitdigital.com"
+                href="mailto:invest@castlehomellc.com"
                 className="hover:underline"
               >
-                info@letsmakeitdigital.com
+                invest@castlehomellc.com
               </a>
             </p>
           </div>
@@ -106,12 +108,12 @@ export default function Footer() {
             <div>
               <p className="font-semibold">Site:</p>
               <a
-                href="https://www.letsmakeitdigital.com"
+                href="https://castlehomellc.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline opacity-90"
               >
-                www.letsmakeitdigital.com
+                castlehomellc.com
               </a>
             </div>
           </div>

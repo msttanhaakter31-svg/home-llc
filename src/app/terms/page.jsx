@@ -138,10 +138,10 @@ export default function TermsOfService() {
                 </a>{" "}
                 or{" "}
                 <a
-                  href="mailto:info@letsmakeitdigital.com"
+                  href="mailto:invest@castlehomellc.com"
                   className="text-blue-600 hover:underline"
                 >
-                  info@letsmakeitdigital.com
+                  invest@castlehomellc.com
                 </a>.
                 Carriers are not liable for delayed or undelivered messages. As
                 always, message and data rates may apply for any messages sent to
@@ -173,6 +173,9 @@ export default function TermsOfService() {
                   <strong className="text-gray-900">Company:</strong> Castle Home LLC
                 </p>
                 <p>
+                  <strong className="text-gray-900">Office Address:</strong> 4539 N 22nd St, Ste N
+                </p>
+                <p>
                   <strong className="text-gray-900">Phone:</strong>{" "}
                   <a
                     href="tel:6232123077"
@@ -184,10 +187,21 @@ export default function TermsOfService() {
                 <p>
                   <strong className="text-gray-900">Email:</strong>{" "}
                   <a
-                    href="mailto:info@letsmakeitdigital.com"
+                    href="mailto:invest@castlehomellc.com"
                     className="text-blue-600 hover:underline"
                   >
-                    info@letsmakeitdigital.com
+                    invest@castlehomellc.com
+                  </a>
+                </p>
+                <p>
+                  <strong className="text-gray-900">Website:</strong>{" "}
+                  <a
+                    href="https://castlehomellc.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    castlehomellc.com
                   </a>
                 </p>
               </div>

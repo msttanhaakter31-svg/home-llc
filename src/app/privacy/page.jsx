@@ -276,6 +276,19 @@ export default function PrivacyPolicy() {
                   Castle Home LLC
                 </p>
                 <p>
+                  <strong className="text-gray-900">Office Address:</strong>{" "}
+                  4539 N 22nd St, Ste N
+                </p>
+                <p>
+                  <strong className="text-gray-900">Phone:</strong>{" "}
+                  <a
+                    href="tel:6232123077"
+                    className="text-blue-600 hover:underline"
+                  >
+                    (623)-212-3077
+                  </a>
+                </p>
+                <p>
                   <strong className="text-gray-900">Website Domain:</strong>{" "}
                   <a
                     href="https://castlehomellc.com"
@@ -289,10 +302,10 @@ export default function PrivacyPolicy() {
                 <p>
                   <strong className="text-gray-900">Contact Email:</strong>{" "}
                   <a
-                    href="mailto:nvest@castlehomellc.com"
+                    href="mailto:invest@castlehomellc.com"
                     className="text-blue-600 hover:underline"
                   >
-                    nvest@castlehomellc.com
+                    invest@castlehomellc.com
                   </a>
                 </p>
               </div>
