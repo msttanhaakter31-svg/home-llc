@@ -214,39 +214,39 @@ export default function ContactPage() {
                 </label>
               </div>
 
-              {/* Terms & Privacy Agreement Link */}
+              {/* Privacy Policy & Terms and Conditions Agreement Link */}
               <p
                 className={`${lato.className} text-[11px] text-gray-400 pt-1 text-center sm:text-left`}
               >
                 By submitting, you agree to our{" "}
                 <Link
-                  href="/terms"
-                  className="underline hover:text-black font-medium"
-                >
-                  Terms of Service
-                </Link>{" "}
-                &amp;{" "}
-                <Link
                   href="/privacy"
                   className="underline hover:text-black font-medium"
                 >
                   Privacy Policy
+                </Link>{" "}
+                &amp;{" "}
+                <Link
+                  href="/terms"
+                  className="underline hover:text-black font-medium"
+                >
+                  Terms and Conditions
                 </Link>
                 .
               </p>
             </div>
 
-            {/* Submit Button in Charcoal Gray */}
-            <div className="pt-2">
+            {/* Submit Button - Centered & Compact in Charcoal Gray */}
+            <div className="pt-3 flex justify-center">
               <button
                 type="submit"
                 disabled={isSubmitting}
                 className={`${
                   nunito.className
-                } w-full bg-[#242830] hover:bg-[#181b20] text-white text-[16px] font-bold py-3.5 px-6 rounded-xl flex items-center justify-between shadow-md hover:shadow-lg transition-all duration-200 active:scale-[0.99] cursor-pointer disabled:opacity-70`}
+                } w-auto min-w-[200px] sm:min-w-[240px] bg-[#242830] hover:bg-[#181b20] text-white text-[15px] sm:text-[16px] font-bold py-3 px-8 rounded-xl inline-flex items-center justify-center gap-3 shadow-md hover:shadow-lg transition-all duration-200 active:scale-[0.98] cursor-pointer disabled:opacity-70 mx-auto`}
               >
                 <span>{isSubmitting ? "Sending..." : "Submit"}</span>
-                <ArrowRight className="w-5 h-5" />
+                <ArrowRight className="w-4 h-4" />
               </button>
             </div>
 

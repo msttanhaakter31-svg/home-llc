@@ -172,21 +172,21 @@ export default function Contact() {
               <p className="text-[11px] text-gray-400 pt-1">
                 By submitting this form, you agree to our{" "}
                 <a
-                  href="/terms"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline hover:text-black font-medium"
-                >
-                  Terms of Service
-                </a>{" "}
-                and{" "}
-                <a
                   href="/privacy"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline hover:text-black font-medium"
                 >
                   Privacy Policy
+                </a>{" "}
+                and{" "}
+                <a
+                  href="/terms"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-black font-medium"
+                >
+                  Terms and Conditions
                 </a>
                 .
               </p>
@@ -234,7 +234,7 @@ export default function Contact() {
                   rel="noopener noreferrer"
                   className="hover:text-black hover:underline transition-all inline-flex items-center gap-1"
                 >
-                  Terms of Service
+                  Terms and Conditions
                 </a>
               </div>
             </div>

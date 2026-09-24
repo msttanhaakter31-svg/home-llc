@@ -138,7 +138,7 @@ export default function Footer() {
           </Link>
           <span className="text-gray-400">|</span>
           <Link href="/terms" className="hover:underline">
-            Terms of Service
+            Terms and Conditions
           </Link>
         </div>
       </div>

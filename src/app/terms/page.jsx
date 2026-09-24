@@ -17,7 +17,7 @@ export const metadata = {
   description: "Terms and Conditions for Castle Home LLC.",
 };
 
-export default function TermsOfService() {
+export default function TermsAndConditions() {
   return (
     <div className="relative min-h-screen">
       {/* Fixed Full-Screen Background Container */}
