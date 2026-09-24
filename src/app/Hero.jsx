@@ -52,10 +52,10 @@ export default function Hero() {
             <p
               className={`${lato.className} text-base sm:text-[17px] text-[#4b5563] leading-relaxed max-w-lg`}
             >
-              We provide direct property evaluation, market consulting, and
-              real estate acquisition services. Whether you are selling an asset
-              or expanding your real estate portfolio, we make the process
-              simple and transparent.
+              Castle Home LLC provides dedicated property valuations, comprehensive market
+              consulting, and corporate real estate portfolio management. We guide clients
+              through strategic asset evaluation with complete operational transparency and
+              corporate integrity.
             </p>
 
             {/* Pill-shaped consultation button */}

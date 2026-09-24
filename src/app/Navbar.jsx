@@ -45,12 +45,6 @@ export default function Navbar() {
             About
           </Link>
           <Link
-            href="/Services"
-            className="px-[20px] py-[5px] hover:text-black transition-all duration-300 ease-in-out"
-          >
-            Services
-          </Link>
-          <Link
             href="/contact"
             className="px-[20px] py-[5px] hover:text-black transition-all duration-300 ease-in-out"
           >
@@ -115,13 +109,6 @@ export default function Navbar() {
             className="block text-gray-800 hover:text-black font-medium py-2 text-center"
           >
             About
-          </Link>
-          <Link
-            href="/Services"
-            onClick={() => setIsOpen(false)}
-            className="block text-gray-800 hover:text-black font-medium py-2 text-center"
-          >
-            Services
           </Link>
           <Link
             href="/contact"
