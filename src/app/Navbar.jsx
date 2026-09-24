@@ -19,8 +19,8 @@ export default function Navbar() {
         {/* Brand Logo Image (Left) */}
         <Link href="/" className="relative w-20 h-20 sm:w-28 sm:h-28 block">
           <Image
-            src="/image.png"
-            alt="Lets Make It Digital Logo"
+            src="/logo-transparent.png"
+            alt="Castle Home LLC Logo"
             fill
             priority
             className="object-contain"

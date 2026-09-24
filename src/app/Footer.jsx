@@ -122,8 +122,8 @@ export default function Footer() {
       <div className="w-full py-10 flex flex-col items-center justify-center space-y-4">
         <Link href="/" className="relative w-24 h-24 block">
           <Image
-            src="/image.png"
-            alt="Lets Make It Digital Logo"
+            src="/logo-transparent.png"
+            alt="Castle Home LLC Logo"
             fill
             className="object-contain"
           />
