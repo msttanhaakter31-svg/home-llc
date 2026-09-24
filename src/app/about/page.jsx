@@ -115,73 +115,67 @@ export default function AboutPage() {
           <div
             className={`${lato.className} space-y-6 text-[#1a1a1a] text-[15px] sm:text-[16px] leading-[1.8]`}
           >
-            <p className="font-semibold text-[#2c3e50] text-[17px]">
-              We provide end-to-end marketing infrastructure and support for
-              agencies who are ready to scale.
+            <p className="font-semibold text-[#2c3e50] text-[18px] sm:text-[19px] leading-snug">
+              At Castle Home LLC, we specialize in off-market property
+              acquisition, real estate asset evaluation, and localized market
+              pairing.
             </p>
 
-            <p className="text-gray-700">
-              From behind-the-scenes systems to client-facing strategy, we give
-              you the tools, talent, and time-saving processes you need to
-              deliver better results—without burning out your team or blowing
-              your budget.
+            <p className="text-gray-700 max-w-3xl mx-auto text-[16px]">
+              We act as a dedicated bridge in the residential real estate market
+              by identifying properties with hidden potential and thoroughly
+              assessing their baseline value.
             </p>
 
-            <p className="font-semibold text-black pt-2">
-              Here's how we help marketing agencies like yours grow:
-            </p>
+            {/* Core Pillars Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4 text-left">
+              <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-sm border border-white/60 space-y-2">
+                <h3
+                  className={`${nunito.className} font-bold text-black text-[17px]`}
+                >
+                  Property Acquisition
+                </h3>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  Specializing in off-market property acquisition and sourcing
+                  residential opportunities with hidden baseline potential.
+                </p>
+              </div>
 
-            <ul className="space-y-4 text-left sm:text-center max-w-3xl mx-auto pt-2 text-gray-800">
-              <li>
-                <strong className="font-bold text-black">
-                  White-Labeled Campaign Services
-                </strong>
-                Need an extra set of expert hands? We handle the execution while
-                you keep the credit—ads, funnels, automations, and more.
-              </li>
-              <li>
-                <strong className="font-bold text-black">
-                  Sales Enablement & Fulfillment Systems
-                </strong>
-                Close more deals with plug-and-play proposals, onboarding flows,
-                and fulfillment docs that save you hours every week.
-              </li>
-              <li>
-                <strong className="font-bold text-black">
-                  A2P Messaging Compliance & SMS Strategy
-                </strong>
-                Navigate the world of text marketing confidently with compliant
-                opt-ins, campaign registrations, and messaging that actually
-                converts.
-              </li>
-              <li>
-                <strong className="font-bold text-black">
-                  Automation & Tech Integration
-                </strong>
-                Streamline your backend with systems that sync seamlessly—from
-                CRMs to form funnels to reporting dashboards.
-              </li>
-              <li>
-                <strong className="font-bold text-black">
-                  Branding & Positioning Support
-                </strong>
-                Whether you're launching or levelling up, we help you refine
-                your offer and brand voice so you stand out in a sea of
-                sameness.
-              </li>
-            </ul>
+              <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-sm border border-white/60 space-y-2">
+                <h3
+                  className={`${nunito.className} font-bold text-black text-[17px]`}
+                >
+                  Asset Evaluation
+                </h3>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  Conducting comprehensive structural reviews, neighborhood data
+                  analysis, and property logistics management to streamline
+                  research.
+                </p>
+              </div>
 
-            <p className="font-semibold text-black pt-6 text-[17px]">
-              You're already great at what you do. We're just here to make it
-              easier to do more of it, better.
-            </p>
-          </div>
+              <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-sm border border-white/60 space-y-2">
+                <h3
+                  className={`${nunito.className} font-bold text-black text-[17px]`}
+                >
+                  Strategic Pairing
+                </h3>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  Serving as the operational engine for seamless property
+                  transitions across real estate professionals, buyers, and local
+                  families.
+                </p>
+              </div>
+            </div>
 
-          <div className="border-t border-gray-300 pt-8 mt-8">
-            <p className="text-sm text-gray-500 italic">
-              Would you like a more niche version (e.g. for agencies in real
-              estate, healthcare, or SaaS)? Or want to add pricing tiers or
-              call-to-action sections under this?
+            <p className="text-gray-800 font-medium pt-4 max-w-3xl mx-auto text-[16px] leading-relaxed">
+              Through comprehensive structural reviews, neighborhood data
+              analysis, and property logistics management, we streamline the
+              research phase of real estate. We handle the heavy lifting of
+              sourcing and evaluating local residential opportunities, serving as
+              the strategic back-end engine for property transitions so our
+              network of real estate professionals, buyers, and local families
+              can confidently execute their property goals.
             </p>
           </div>
         </div>
