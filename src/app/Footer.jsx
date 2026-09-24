@@ -53,8 +53,8 @@ export default function Footer() {
         {/* Column 3: Map View */}
         <div className="w-full h-48 rounded-md overflow-hidden border border-gray-200 shadow-sm relative">
           <iframe
-            title="Google Maps Location"
-            src="https://maps.google.com/maps?q=4539+N+22nd+St,+Ste+N&t=&z=14&ie=UTF8&iwloc=&output=embed"
+            title="Google Maps Location - Castle Home LLC"
+            src="https://maps.google.com/maps?q=33.502736,-112.034481&hl=en&z=16&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -122,7 +122,7 @@ export default function Footer() {
 
       {/* Bottom Footer: Logo & Legal Links */}
       <div className="w-full py-10 flex flex-col items-center justify-center space-y-4">
-        <Link href="/" className="relative w-24 h-24 block">
+        <Link href="/" className="relative w-36 h-36 sm:w-44 sm:h-44 block">
           <Image
             src="/logo-transparent.png"
             alt="Castle Home LLC Logo"

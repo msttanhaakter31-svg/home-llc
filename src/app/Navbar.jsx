@@ -17,13 +17,16 @@ export default function Navbar() {
     <nav className="w-full bg-[#f8f9fa] border-b border-gray-100 pt-4 md:pt-6 pb-4 relative z-50">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between">
         {/* Brand Logo Image (Left) */}
-        <Link href="/" className="relative w-20 h-20 sm:w-28 sm:h-28 block">
+        <Link
+          href="/"
+          className="relative w-28 h-24 sm:w-36 sm:h-28 md:w-44 md:h-32 block shrink-0"
+        >
           <Image
             src="/logo-transparent.png"
             alt="Castle Home LLC Logo"
             fill
             priority
-            className="object-contain"
+            className="object-contain object-left"
           />
         </Link>
 
