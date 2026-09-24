@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Nunito, Lato } from "next/font/google";
 
 const nunito = Nunito({
@@ -103,80 +104,138 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* What We Do Section (Grey Background Block) */}
-      <section className="w-full bg-[#dbe1e9] py-20 px-6 lg:px-12 text-center">
-        <div className="max-w-4xl mx-auto space-y-8">
-          <h2
-            className={`${nunito.className} text-[32px] sm:text-[36px] font-bold text-[#1a1a1a]`}
-          >
-            What We Do
-          </h2>
+      {/* What We Do Section */}
+      <section className="w-full bg-[#f4f7fa] border-t border-gray-200/60 py-20 px-6 lg:px-12 text-center">
+        <div className="max-w-5xl mx-auto space-y-12">
+          {/* Header */}
+          <div className="space-y-4 max-w-3xl mx-auto">
+            <h2
+              className={`${nunito.className} text-[32px] sm:text-[38px] font-bold text-[#1a1a1a] tracking-tight`}
+            >
+              What We Do
+            </h2>
+            <div
+              className={`${lato.className} space-y-4 text-gray-700 text-[16px] sm:text-[17px] leading-relaxed`}
+            >
+              <p className="font-semibold text-[#242830] text-[18px] sm:text-[19px]">
+                Operating as Castle Home LLC, we simplify the property evaluation process for homeowners. Our primary focus is assisting property owners by delivering clear, reliable insights into their real estate assets and providing tailored property solutions.
+              </p>
+              <p className="text-gray-600">
+                We act as a specialized bridge, connecting individuals looking to transition out of their properties with customized real estate opportunities.
+              </p>
+            </div>
+          </div>
 
-          <div
-            className={`${lato.className} space-y-6 text-[#1a1a1a] text-[15px] sm:text-[16px] leading-[1.8]`}
-          >
-            <p className="font-semibold text-[#2c3e50] text-[18px] sm:text-[19px] leading-snug">
-              At Castle Home LLC, we specialize in off-market property
-              acquisition, real estate asset evaluation, and localized market
-              pairing.
-            </p>
+          {/* Our Core Operations */}
+          <div className="space-y-8">
+            <div className="inline-block text-center">
+              <span className="text-[11px] font-bold tracking-widest text-[#242830] uppercase bg-white border border-gray-200/80 px-4 py-1.5 rounded-full shadow-xs">
+                Comprehensive Property Services
+              </span>
+              <h3
+                className={`${nunito.className} text-[26px] sm:text-[30px] font-bold text-[#1a1a1a] mt-3`}
+              >
+                Our Core Operations
+              </h3>
+            </div>
 
-            <p className="text-gray-700 max-w-3xl mx-auto text-[16px]">
-              We act as a dedicated bridge in the residential real estate market
-              by identifying properties with hidden potential and thoroughly
-              assessing their baseline value.
-            </p>
-
-            {/* Core Pillars Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4 text-left">
-              <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-sm border border-white/60 space-y-2">
-                <h3
-                  className={`${nunito.className} font-bold text-black text-[17px]`}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+              {/* 1. Property Valuation & Assessment */}
+              <div className="bg-white p-7 rounded-2xl shadow-sm border border-gray-200/80 hover:shadow-md transition-shadow duration-200 flex flex-col">
+                <div className="w-10 h-10 rounded-xl bg-[#242830] text-white flex items-center justify-center font-bold text-[16px] mb-4">
+                  1
+                </div>
+                <h4
+                  className={`${nunito.className} font-bold text-[#1a1a1a] text-[18px] mb-2`}
                 >
-                  Property Acquisition
-                </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  Specializing in off-market property acquisition and sourcing
-                  residential opportunities with hidden baseline potential.
+                  Property Valuation &amp; Assessment
+                </h4>
+                <p className={`${lato.className} text-[15px] text-gray-600 leading-relaxed`}>
+                  We analyze market data and property conditions to provide homeowners with an accurate assessment of their real estate assets. If you are curious about the current value or potential of your property, our team delivers comprehensive evaluations without any obligation.
                 </p>
               </div>
 
-              <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-sm border border-white/60 space-y-2">
-                <h3
-                  className={`${nunito.className} font-bold text-black text-[17px]`}
+              {/* 2. Tailored Property Solutions */}
+              <div className="bg-white p-7 rounded-2xl shadow-sm border border-gray-200/80 hover:shadow-md transition-shadow duration-200 flex flex-col">
+                <div className="w-10 h-10 rounded-xl bg-[#242830] text-white flex items-center justify-center font-bold text-[16px] mb-4">
+                  2
+                </div>
+                <h4
+                  className={`${nunito.className} font-bold text-[#1a1a1a] text-[18px] mb-2`}
                 >
-                  Asset Evaluation
-                </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  Conducting comprehensive structural reviews, neighborhood data
-                  analysis, and property logistics management to streamline
-                  research.
+                  Tailored Property Solutions
+                </h4>
+                <p className={`${lato.className} text-[15px] text-gray-600 leading-relaxed`}>
+                  Every homeowner&apos;s situation is unique. Whether you are managing an inherited property, looking to downsize quickly, or dealing with an underutilized asset, we create strategic property plans designed to resolve your specific real estate challenges.
                 </p>
               </div>
 
-              <div className="bg-white/80 backdrop-blur-sm p-6 rounded-lg shadow-sm border border-white/60 space-y-2">
-                <h3
-                  className={`${nunito.className} font-bold text-black text-[17px]`}
+              {/* 3. Consultation & Strategic Connections */}
+              <div className="bg-white p-7 rounded-2xl shadow-sm border border-gray-200/80 hover:shadow-md transition-shadow duration-200 flex flex-col">
+                <div className="w-10 h-10 rounded-xl bg-[#242830] text-white flex items-center justify-center font-bold text-[16px] mb-4">
+                  3
+                </div>
+                <h4
+                  className={`${nunito.className} font-bold text-[#1a1a1a] text-[18px] mb-2`}
                 >
-                  Strategic Pairing
-                </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  Serving as the operational engine for seamless property
-                  transitions across real estate professionals, buyers, and local
-                  families.
+                  Consultation &amp; Strategic Connections
+                </h4>
+                <p className={`${lato.className} text-[15px] text-gray-600 leading-relaxed`}>
+                  We utilize our extensive industry networks to match your property with specialized real estate opportunities. We guide you through the process from initial consultation to final agreement, ensuring transparency and professional oversight at every stage.
                 </p>
               </div>
             </div>
+          </div>
 
-            <p className="text-gray-800 font-medium pt-4 max-w-3xl mx-auto text-[16px] leading-relaxed">
-              Through comprehensive structural reviews, neighborhood data
-              analysis, and property logistics management, we streamline the
-              research phase of real estate. We handle the heavy lifting of
-              sourcing and evaluating local residential opportunities, serving as
-              the strategic back-end engine for property transitions so our
-              network of real estate professionals, buyers, and local families
-              can confidently execute their property goals.
-            </p>
+          {/* Transparent Communications Card */}
+          <div className="max-w-4xl mx-auto bg-white p-8 sm:p-10 rounded-2xl shadow-sm border border-gray-200/80 text-left space-y-6">
+            <div className="border-b border-gray-100 pb-4">
+              <h3 className={`${nunito.className} text-[22px] sm:text-[24px] font-bold text-[#1a1a1a]`}>
+                Transparent Communications
+              </h3>
+              <p className={`${lato.className} text-gray-600 text-[15px] sm:text-[16px] mt-2 leading-relaxed`}>
+                When you interact with our platform or submit an inquiry, you can expect clear, straightforward communication. We utilize SMS updates and phone consultations to keep you informed about:
+              </p>
+            </div>
+
+            <ul className="space-y-3 text-gray-700 text-[15px]">
+              <li className="flex items-start gap-3">
+                <span className="flex-shrink-0 w-5 h-5 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center mt-0.5 text-xs font-bold">
+                  ✓
+                </span>
+                <span>Scheduled property assessment appointments</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="flex-shrink-0 w-5 h-5 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center mt-0.5 text-xs font-bold">
+                  ✓
+                </span>
+                <span>Updates regarding your property valuation report</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="flex-shrink-0 w-5 h-5 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center mt-0.5 text-xs font-bold">
+                  ✓
+                </span>
+                <span>Tailored property acquisition options and solutions</span>
+              </li>
+            </ul>
+
+            <div className="pt-4 border-t border-gray-100 text-[14px] text-gray-500 leading-relaxed">
+              To review how we manage your information and messaging, please read our{" "}
+              <Link
+                href="/privacy"
+                className="text-[#242830] font-semibold underline underline-offset-4 hover:text-black transition-colors"
+              >
+                Privacy Policy
+              </Link>{" "}
+              and our{" "}
+              <Link
+                href="/terms"
+                className="text-[#242830] font-semibold underline underline-offset-4 hover:text-black transition-colors"
+              >
+                Terms and Conditions
+              </Link>
+              .
+            </div>
           </div>
         </div>
       </section>
