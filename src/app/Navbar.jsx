@@ -34,20 +34,25 @@ export default function Navbar() {
         <div className="hidden md:flex items-center space-x-1 text-base text-gray-800 font-medium">
           <Link
             href="/"
-            className="px-[25px] py-[5px] hover:text-black transition-all duration-300 ease-in-out"
+            className="px-[20px] py-[5px] hover:text-black transition-all duration-300 ease-in-out"
           >
             Home
           </Link>
           <Link
-            href="about"
-            className="px-[25px] py-[5px] hover:text-black transition-all duration-300 ease-in-out"
+            href="/about"
+            className="px-[20px] py-[5px] hover:text-black transition-all duration-300 ease-in-out"
           >
             About
           </Link>
-
           <Link
-            href="contact"
-            className="px-[25px] py-[5px] hover:text-black transition-all duration-300 ease-in-out"
+            href="/Services"
+            className="px-[20px] py-[5px] hover:text-black transition-all duration-300 ease-in-out"
+          >
+            Services
+          </Link>
+          <Link
+            href="/contact"
+            className="px-[20px] py-[5px] hover:text-black transition-all duration-300 ease-in-out"
           >
             Contact
           </Link>
@@ -111,7 +116,13 @@ export default function Navbar() {
           >
             About
           </Link>
-
+          <Link
+            href="/Services"
+            onClick={() => setIsOpen(false)}
+            className="block text-gray-800 hover:text-black font-medium py-2 text-center"
+          >
+            Services
+          </Link>
           <Link
             href="/contact"
             onClick={() => setIsOpen(false)}
@@ -121,15 +132,6 @@ export default function Navbar() {
           </Link>
         </div>
       )}
-
-      {/* Welcome Header */}
-      <div className="w-full text-center pt-6 md:pt-8 pb-2 px-4">
-        <h1
-          className={`${nunito.className} text-2xl sm:text-[32px] font-bold text-black tracking-tight`}
-        >
-          <strong>Welcome to Castle Home LLC</strong>
-        </h1>
-      </div>
     </nav>
   );
 }

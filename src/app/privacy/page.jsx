@@ -276,7 +276,7 @@ export default function PrivacyPolicy() {
                 </p>
                 <p>
                   <strong className="text-gray-900">Office Address:</strong>{" "}
-                  4539 N 22nd St, Ste N
+                  4539 N 22nd St, Ste N, Phoenix, AZ 85016
                 </p>
                 <p>
                   <strong className="text-gray-900">Phone:</strong>{" "}

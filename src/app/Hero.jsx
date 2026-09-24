@@ -1,20 +1,21 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Nunito, Lato } from "next/font/google";
 
 const nunito = Nunito({
   subsets: ["latin"],
-  weight: ["700"],
+  weight: ["700", "800"],
 });
 
 const lato = Lato({
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["400", "700"],
 });
 
 export default function Hero() {
   return (
-    <section className="relative w-full bg-[#f8f9fa] py-16 md:py-20 overflow-hidden">
-      {/* Background wave pattern */}
+    <section className="relative w-full bg-[#f8f9fa] pt-12 pb-20 md:pt-16 md:pb-28 overflow-hidden">
+      {/* Background Real Estate Pattern */}
       <div className="absolute inset-0 pointer-events-none opacity-40">
         <Image
           src="/image_bg.png"
@@ -26,35 +27,74 @@ export default function Hero() {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        {/* Main Centered Welcome Headline */}
+        <h1
+          className={`${nunito.className} text-center font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-[48px] text-[#0d1322] tracking-tight mb-12 sm:mb-16 md:mb-20`}
+        >
+          Welcome to Castle Home LLC!
+        </h1>
+
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
           {/* Left Column: Content */}
           <div className="lg:col-span-6 space-y-6">
+            {/* Multi-colored Hero Headline matching reference */}
             <h2
-              className={`${nunito.className} text-[28px] text-black leading-tight`}
+              className={`${nunito.className} text-[32px] sm:text-[40px] md:text-[44px] font-extrabold leading-[1.15] tracking-tight`}
             >
-              Streamlined Property Solutions & <br className="hidden sm:inline" />
-              Real Estate Investments
+              <span className="text-[#0d1322]">Streamlined Property</span>
+              <br />
+              <span className="text-[#0d1322]">Solutions &amp; </span>
+              <span className="text-[#da7932]">Real Estate</span>
+              <br />
+              <span className="text-[#da7932]">Investments</span>
             </h2>
 
             <p
-              className={`${lato.className} text-[18px] text-[#677294] leading-[1.6em] pb-2 max-w-lg`}
+              className={`${lato.className} text-base sm:text-[17px] text-[#4b5563] leading-relaxed max-w-lg`}
             >
-              We provide direct property evaluation, market consulting, and real estate acquisition services. Whether you are selling an asset or expanding your real estate portfolio, we make the process simple and transparent.
+              We provide direct property evaluation, market consulting, and
+              real estate acquisition services. Whether you are selling an asset
+              or expanding your real estate portfolio, we make the process
+              simple and transparent.
             </p>
 
-            <div>
+            {/* Pill-shaped consultation button */}
+            <div className="pt-2">
               <a
-                href="#contact"
-                className="inline-block bg-[#FF8A73] text-white text-[18px] sm:text-[20px] font-bold px-[28px] py-[14px] rounded-lg shadow-[0_10px_20px_rgba(0,0,0,0.15)] hover:opacity-90 transition-opacity"
+                href="/contact"
+                className={`${nunito.className} inline-block bg-[#da7932] hover:bg-[#c36522] text-white text-[16px] sm:text-[17px] font-bold px-8 py-3.5 rounded-full shadow-md hover:shadow-lg transition-all duration-200 active:scale-[0.98]`}
               >
                 Request a Property Consultation
               </a>
             </div>
+
+            {/* SMS & Legal Disclaimer directly below button */}
+            <p
+              className={`${lato.className} text-[11px] sm:text-xs text-gray-500 leading-normal max-w-lg pt-1`}
+            >
+              By providing your phone number, you consent to receive message
+              updates from Castle Home LLC. Msg &amp; data rates may apply. Reply
+              STOP to opt-out. View our{" "}
+              <Link
+                href="/privacy"
+                className="underline hover:text-black font-medium"
+              >
+                Privacy Policy
+              </Link>{" "}
+              &amp;{" "}
+              <Link
+                href="/terms"
+                className="underline hover:text-black font-medium"
+              >
+                Terms
+              </Link>
+              .
+            </p>
           </div>
 
           {/* Right Column: Hero Illustration Image */}
-          <div className="lg:col-span-6 flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-[540px] aspect-[4/3]">
+          <div className="lg:col-span-6 flex justify-center lg:justify-end items-center">
+            <div className="relative w-full max-w-[620px] lg:max-w-[700px] aspect-[892/613]">
               <Image
                 src="/home.svg"
                 alt="Castle Home LLC Real Estate Solutions"

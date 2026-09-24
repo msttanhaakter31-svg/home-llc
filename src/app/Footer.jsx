@@ -24,6 +24,7 @@ export default function Footer() {
             <div className="pt-2">
               <p className="font-semibold text-black">Address</p>
               <p className="text-gray-600">4539 N 22nd St, Ste N</p>
+              <p className="text-gray-600">Phoenix, AZ 85016</p>
             </div>
           </div>
         </div>
@@ -36,7 +37,7 @@ export default function Footer() {
           <div className="space-y-4 text-sm text-gray-600">
             <div>
               <p className="font-semibold text-black">Assistance Hours</p>
-              <p>Mon – Sat 9:00am – 8:00pm</p>
+              <p>Mon – Sat 9:00am – 5:00pm</p>
               <p>Sunday – CLOSED</p>
             </div>
             <div>
@@ -65,15 +66,15 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Middle Banner: Blue Ribbon */}
-      <div className="w-full bg-[#5880f6] text-white py-6">
+      {/* Middle Banner: Dark Grey Ribbon */}
+      <div className="w-full bg-[#242830] text-white py-6">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-xs sm:text-sm text-center sm:text-left">
           {/* Office */}
           <div className="flex items-center justify-center sm:justify-start gap-2">
             <span className="text-base">📍</span>
             <p>
               <span className="font-semibold">Office: </span>
-              <span className="opacity-90">4539 N 22nd St, Ste N</span>
+              <span className="opacity-90">4539 N 22nd St, Ste N, Phoenix, AZ 85016</span>
             </p>
           </div>
 

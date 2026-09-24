@@ -173,7 +173,7 @@ export default function TermsOfService() {
                   <strong className="text-gray-900">Company:</strong> Castle Home LLC
                 </p>
                 <p>
-                  <strong className="text-gray-900">Office Address:</strong> 4539 N 22nd St, Ste N
+                  <strong className="text-gray-900">Office Address:</strong> 4539 N 22nd St, Ste N, Phoenix, AZ 85016
                 </p>
                 <p>
                   <strong className="text-gray-900">Phone:</strong>{" "}
