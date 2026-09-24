@@ -4,7 +4,7 @@ import { Nunito, Lato } from "next/font/google";
 
 const nunito = Nunito({
   subsets: ["latin"],
-  weight: ["700"],
+  weight: ["700", "800"],
 });
 
 const lato = Lato({
@@ -36,20 +36,22 @@ export default function TermsAndConditions() {
         <div className="max-w-4xl mx-auto space-y-8">
           {/* Main Title */}
           <h1
-            className={`${nunito.className} text-[32px] sm:text-[40px] font-bold text-[#1f2438] tracking-tight`}
+            className={`${nunito.className} text-[34px] sm:text-[44px] font-extrabold text-black tracking-tight`}
           >
             Terms and Conditions
           </h1>
 
           {/* Header Dates & Intro */}
           <div
-            className={`${lato.className} space-y-4 text-gray-700 text-sm sm:text-base leading-relaxed`}
+            className={`${lato.className} space-y-4 text-black text-[16px] sm:text-[18px] leading-relaxed`}
           >
-            <p className="font-semibold text-gray-900">Terms and Conditions</p>
-            <p className="text-xs text-gray-500 font-medium">
+            <p className="font-bold text-black text-[19px] sm:text-[21px]">
+              Terms and Conditions
+            </p>
+            <p className="text-[14px] sm:text-[15px] text-black font-semibold">
               Effective Date: 09/24/2026
             </p>
-            <p className="text-xs text-gray-500 font-medium">
+            <p className="text-[14px] sm:text-[15px] text-black font-semibold">
               Last Updated: 09/24/2026
             </p>
 
@@ -62,19 +64,23 @@ export default function TermsAndConditions() {
             <p>
               By accessing or using our Conditions, you agree to be bound by these
               Terms and our{" "}
-              <Link href="/privacy" className="text-blue-600 hover:underline">
+              <Link
+                href="/privacy"
+                className="text-blue-700 font-semibold underline underline-offset-2 hover:text-black transition-colors"
+              >
                 Privacy Policy
-              </Link>.
+              </Link>
+              .
             </p>
           </div>
 
           {/* Article Body */}
           <article
-            className={`${lato.className} space-y-8 text-sm sm:text-base text-gray-700 leading-relaxed`}
+            className={`${lato.className} space-y-8 text-[16px] sm:text-[18px] text-black leading-relaxed`}
           >
             {/* Section 1 */}
             <section className="space-y-3">
-              <h2 className="text-lg font-bold text-[#1f2438]">
+              <h2 className="text-[20px] sm:text-[23px] font-bold text-black">
                 1. Conditions Provided
               </h2>
               <p>
@@ -88,9 +94,11 @@ export default function TermsAndConditions() {
               </p>
             </section>
 
+            <hr className="border-gray-300" />
+
             {/* Section 2 */}
             <section className="space-y-3">
-              <h2 className="text-lg font-bold text-[#1f2438]">
+              <h2 className="text-[20px] sm:text-[23px] font-bold text-black">
                 2. Use of Conditions
               </h2>
               <p>
@@ -104,23 +112,25 @@ export default function TermsAndConditions() {
               </p>
             </section>
 
+            <hr className="border-gray-300" />
+
             {/* Section 3 */}
             <section className="space-y-3">
-              <h2 className="text-lg font-bold text-[#1f2438]">
+              <h2 className="text-[20px] sm:text-[23px] font-bold text-black">
                 3. SMS &amp; Messaging Terms
               </h2>
               <p>
                 Castle Home LLC provides specialized text messaging updates regarding
                 property inquiries, scheduling valuation appointments, and delivering
                 tailored property acquisition offers. You can cancel the SMS service
-                at any time. Just text &quot;<strong>STOP</strong>&quot; to{" "}
+                at any time. Just text &quot;<strong className="text-black font-bold">STOP</strong>&quot; to{" "}
                 <a
                   href="tel:6232123077"
-                  className="font-semibold text-gray-900 hover:underline"
+                  className="font-bold text-black underline underline-offset-2 hover:text-blue-700 transition-colors"
                 >
                   (623)-212-3077
-                </a>.
-                After you send the SMS message &quot;<strong>STOP</strong>&quot; to us,
+                </a>
+                . After you send the SMS message &quot;<strong className="text-black font-bold">STOP</strong>&quot; to us,
                 we will send you an SMS message to confirm that you have been
                 unsubscribed. After this, you will no longer receive SMS messages
                 from us. If you want to join again, just sign up as you did the first
@@ -128,21 +138,24 @@ export default function TermsAndConditions() {
               </p>
               <p>
                 If you are experiencing issues with the messaging program you can
-                reply with the keyword <strong>HELP</strong> for more assistance,
+                reply with the keyword <strong className="text-black font-bold">HELP</strong> for more assistance,
                 or you can get help directly at{" "}
                 <a
                   href="tel:6232123077"
-                  className="text-blue-600 hover:underline"
+                  className="text-blue-700 font-semibold underline underline-offset-2 hover:text-black transition-colors"
                 >
                   (623)-212-3077
                 </a>{" "}
                 or{" "}
                 <a
                   href="mailto:invest@castlehomellc.com"
-                  className="text-blue-600 hover:underline"
+                  className="text-blue-700 font-semibold underline underline-offset-2 hover:text-black transition-colors"
                 >
                   invest@castlehomellc.com
-                </a>.
+                </a>
+                .
+              </p>
+              <p>
                 Carriers are not liable for delayed or undelivered messages. As
                 always, message and data rates may apply for any messages sent to
                 you from us and to us from you. You will receive recurring messages
@@ -152,54 +165,58 @@ export default function TermsAndConditions() {
                 please read our privacy policy:{" "}
                 <Link
                   href="/privacy"
-                  className="text-blue-600 font-semibold hover:underline"
+                  className="text-blue-700 font-semibold underline underline-offset-2 hover:text-black transition-colors"
                 >
                   Privacy Policy
-                </Link>.
+                </Link>
+                .
               </p>
             </section>
 
+            <hr className="border-gray-300" />
+
             {/* Section 4 */}
-            <section className="space-y-3 border-t border-gray-200 pt-6">
-              <h2 className="text-lg font-bold text-[#1f2438]">
+            <section className="space-y-3 pt-2">
+              <h2 className="text-[20px] sm:text-[23px] font-bold text-black">
                 4. Contact Information
               </h2>
               <p>
                 If you have any questions, inquiries, or need clarification
                 regarding these Terms and Conditions, please contact Castle Home LLC at:
               </p>
-              <div className="space-y-1.5 pt-1 text-sm sm:text-base">
+              <div className="space-y-2 pt-2 text-[16px] sm:text-[18px]">
                 <p>
-                  <strong className="text-gray-900">Company:</strong> Castle Home LLC
+                  <strong className="text-black font-bold">Company:</strong> Castle Home LLC
                 </p>
                 <p>
-                  <strong className="text-gray-900">Office Address:</strong> 4539 N 22nd St, Ste N, Phoenix, AZ 85016
+                  <strong className="text-black font-bold">Office Address:</strong>{" "}
+                  4539 N 22nd St, Ste N, Phoenix, AZ 85016
                 </p>
                 <p>
-                  <strong className="text-gray-900">Phone:</strong>{" "}
+                  <strong className="text-black font-bold">Phone:</strong>{" "}
                   <a
                     href="tel:6232123077"
-                    className="text-blue-600 hover:underline"
+                    className="text-blue-700 font-semibold underline underline-offset-2 hover:text-black transition-colors"
                   >
                     (623)-212-3077
                   </a>
                 </p>
                 <p>
-                  <strong className="text-gray-900">Email:</strong>{" "}
+                  <strong className="text-black font-bold">Email:</strong>{" "}
                   <a
                     href="mailto:invest@castlehomellc.com"
-                    className="text-blue-600 hover:underline"
+                    className="text-blue-700 font-semibold underline underline-offset-2 hover:text-black transition-colors"
                   >
                     invest@castlehomellc.com
                   </a>
                 </p>
                 <p>
-                  <strong className="text-gray-900">Website:</strong>{" "}
+                  <strong className="text-black font-bold">Website:</strong>{" "}
                   <a
                     href="https://castlehomellc.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
+                    className="text-blue-700 font-semibold underline underline-offset-2 hover:text-black transition-colors"
                   >
                     castlehomellc.com
                   </a>

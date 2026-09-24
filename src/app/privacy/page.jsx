@@ -3,7 +3,7 @@ import { Nunito, Lato } from "next/font/google";
 
 const nunito = Nunito({
   subsets: ["latin"],
-  weight: ["700"],
+  weight: ["700", "800"],
 });
 
 const lato = Lato({
@@ -35,20 +35,22 @@ export default function PrivacyPolicy() {
         <div className="max-w-4xl mx-auto space-y-8">
           {/* Main Title */}
           <h1
-            className={`${nunito.className} text-[32px] sm:text-[40px] font-bold text-[#1f2438] tracking-tight`}
+            className={`${nunito.className} text-[34px] sm:text-[44px] font-extrabold text-black tracking-tight`}
           >
             Privacy Policy
           </h1>
 
           {/* Header Dates & Intro */}
           <div
-            className={`${lato.className} space-y-4 text-gray-700 text-sm sm:text-base leading-relaxed`}
+            className={`${lato.className} space-y-4 text-black text-[16px] sm:text-[18px] leading-relaxed`}
           >
-            <p className="font-semibold text-gray-900">Privacy Policy</p>
-            <p className="text-xs text-gray-500 font-medium">
+            <p className="font-bold text-black text-[19px] sm:text-[21px]">
+              Privacy Policy
+            </p>
+            <p className="text-[14px] sm:text-[15px] text-black font-semibold">
               Effective Date: September 24, 2026
             </p>
-            <p className="text-xs text-gray-500 font-medium">
+            <p className="text-[14px] sm:text-[15px] text-black font-semibold">
               Last Updated: September 24, 2026
             </p>
 
@@ -66,11 +68,11 @@ export default function PrivacyPolicy() {
 
           {/* Article Body */}
           <article
-            className={`${lato.className} space-y-8 text-sm sm:text-base text-gray-700 leading-relaxed`}
+            className={`${lato.className} space-y-8 text-[16px] sm:text-[18px] text-black leading-relaxed`}
           >
             {/* Section 1 */}
             <section className="space-y-3">
-              <h2 className="text-lg font-bold text-[#1f2438]">
+              <h2 className="text-[20px] sm:text-[23px] font-bold text-black">
                 1. Information We Collect
               </h2>
               <p>
@@ -81,16 +83,16 @@ export default function PrivacyPolicy() {
               </p>
               <ul className="list-disc pl-5 space-y-2">
                 <li>
-                  <strong className="text-gray-900">Identity Data:</strong> Your
+                  <strong className="text-black font-bold">Identity Data:</strong> Your
                   name, email address, and mailing address.
                 </li>
                 <li>
-                  <strong className="text-gray-900">Property Data:</strong> Real
+                  <strong className="text-black font-bold">Property Data:</strong> Real
                   estate details, property addresses, and details required for
                   evaluating housing trends or property consultations.
                 </li>
                 <li>
-                  <strong className="text-gray-900">
+                  <strong className="text-black font-bold">
                     Contact &amp; Mobile Data:
                   </strong>{" "}
                   Your phone number and explicit SMS opt-in consent records.
@@ -98,11 +100,11 @@ export default function PrivacyPolicy() {
               </ul>
             </section>
 
-            <hr className="border-gray-200" />
+            <hr className="border-gray-300" />
 
             {/* Section 2 */}
             <section className="space-y-3">
-              <h2 className="text-lg font-bold text-[#1f2438]">
+              <h2 className="text-[20px] sm:text-[23px] font-bold text-black">
                 2. How We Use Your Information
               </h2>
               <p>
@@ -127,11 +129,11 @@ export default function PrivacyPolicy() {
               </ul>
             </section>
 
-            <hr className="border-gray-200" />
+            <hr className="border-gray-300" />
 
             {/* Section 3 */}
             <section className="space-y-3">
-              <h2 className="text-lg font-bold text-[#1f2438]">
+              <h2 className="text-[20px] sm:text-[23px] font-bold text-black">
                 3. Absolute Restriction on Data Sharing &amp; Selling
               </h2>
               <p>
@@ -143,22 +145,22 @@ export default function PrivacyPolicy() {
               </p>
             </section>
 
-            <hr className="border-gray-200" />
+            <hr className="border-gray-300" />
 
             {/* Section 4 */}
             <section className="space-y-3">
-              <h2 className="text-lg font-bold text-[#1f2438]">
+              <h2 className="text-[20px] sm:text-[23px] font-bold text-black">
                 4. SMS &amp; Mobile Text Messaging Policy
               </h2>
               <p>
                 We treat text messaging originator opt-in data with the highest
                 level of security and privacy.
               </p>
-              <div className="bg-gray-50 border border-gray-200 p-5 rounded-lg space-y-3 mt-2">
-                <p className="font-semibold text-gray-900">
+              <div className="bg-gray-50 border border-gray-300 p-6 rounded-xl space-y-3 mt-3">
+                <p className="font-bold text-black text-[17px] sm:text-[18px]">
                   Strict Mobile Privacy Mandates:
                 </p>
-                <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                <ul className="list-disc pl-5 space-y-2 text-black">
                   <li>
                     No mobile information will be shared with third parties or
                     affiliates for marketing/promotional purposes.
@@ -181,11 +183,11 @@ export default function PrivacyPolicy() {
               </div>
             </section>
 
-            <hr className="border-gray-200" />
+            <hr className="border-gray-300" />
 
             {/* Section 5 */}
             <section className="space-y-3">
-              <h2 className="text-lg font-bold text-[#1f2438]">
+              <h2 className="text-[20px] sm:text-[23px] font-bold text-black">
                 5. Data Security Practices
               </h2>
               <p>
@@ -198,11 +200,11 @@ export default function PrivacyPolicy() {
               </p>
             </section>
 
-            <hr className="border-gray-200" />
+            <hr className="border-gray-300" />
 
             {/* Section 6 */}
             <section className="space-y-3">
-              <h2 className="text-lg font-bold text-[#1f2438]">
+              <h2 className="text-[20px] sm:text-[23px] font-bold text-black">
                 6. Cookies and Tracking Information
               </h2>
               <p>
@@ -217,36 +219,36 @@ export default function PrivacyPolicy() {
               </p>
             </section>
 
-            <hr className="border-gray-200" />
+            <hr className="border-gray-300" />
 
             {/* Section 7 */}
             <section className="space-y-3">
-              <h2 className="text-lg font-bold text-[#1f2438]">
+              <h2 className="text-[20px] sm:text-[23px] font-bold text-black">
                 7. Your Privacy Rights &amp; Opt-Out Controls
               </h2>
               <p>You have complete control over your communication preferences:</p>
               <ul className="list-disc pl-5 space-y-2">
                 <li>
-                  <strong className="text-gray-900">SMS Opt-Out:</strong> You
+                  <strong className="text-black font-bold">SMS Opt-Out:</strong> You
                   can cancel or revoke text message consent at any time by
-                  replying <strong>STOP</strong> to any text message received from
+                  replying <strong className="text-black font-bold">STOP</strong> to any text message received from
                   us. A final confirmation message will be sent, and no further
                   mobile messages will be delivered.
                 </li>
                 <li>
-                  <strong className="text-gray-900">Customer Support:</strong>{" "}
+                  <strong className="text-black font-bold">Customer Support:</strong>{" "}
                   For questions, data correction requests, or information
-                  regarding this policy, you may text <strong>HELP</strong> or
+                  regarding this policy, you may text <strong className="text-black font-bold">HELP</strong> or
                   contact us directly using the details provided below.
                 </li>
               </ul>
             </section>
 
-            <hr className="border-gray-200" />
+            <hr className="border-gray-300" />
 
             {/* Section 8 */}
             <section className="space-y-3">
-              <h2 className="text-lg font-bold text-[#1f2438]">
+              <h2 className="text-[20px] sm:text-[23px] font-bold text-black">
                 8. Updates to This Privacy Policy
               </h2>
               <p>
@@ -258,51 +260,51 @@ export default function PrivacyPolicy() {
               </p>
             </section>
 
-            <hr className="border-gray-200" />
+            <hr className="border-gray-300" />
 
             {/* Section 9 */}
             <section className="space-y-3">
-              <h2 className="text-lg font-bold text-[#1f2438]">
+              <h2 className="text-[20px] sm:text-[23px] font-bold text-black">
                 9. Contact Information
               </h2>
               <p>
                 For questions or concerns regarding your data or this policy,
                 please contact us at:
               </p>
-              <div className="space-y-1.5 pt-1 text-sm sm:text-base">
+              <div className="space-y-2 pt-2 text-[16px] sm:text-[18px]">
                 <p>
-                  <strong className="text-gray-900">Business Name:</strong>{" "}
+                  <strong className="text-black font-bold">Business Name:</strong>{" "}
                   Castle Home LLC
                 </p>
                 <p>
-                  <strong className="text-gray-900">Office Address:</strong>{" "}
+                  <strong className="text-black font-bold">Office Address:</strong>{" "}
                   4539 N 22nd St, Ste N, Phoenix, AZ 85016
                 </p>
                 <p>
-                  <strong className="text-gray-900">Phone:</strong>{" "}
+                  <strong className="text-black font-bold">Phone:</strong>{" "}
                   <a
                     href="tel:6232123077"
-                    className="text-blue-600 hover:underline"
+                    className="text-blue-700 font-semibold underline underline-offset-2 hover:text-black transition-colors"
                   >
                     (623)-212-3077
                   </a>
                 </p>
                 <p>
-                  <strong className="text-gray-900">Website Domain:</strong>{" "}
+                  <strong className="text-black font-bold">Website Domain:</strong>{" "}
                   <a
                     href="https://castlehomellc.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
+                    className="text-blue-700 font-semibold underline underline-offset-2 hover:text-black transition-colors"
                   >
                     castlehomellc.com
                   </a>
                 </p>
                 <p>
-                  <strong className="text-gray-900">Contact Email:</strong>{" "}
+                  <strong className="text-black font-bold">Contact Email:</strong>{" "}
                   <a
                     href="mailto:invest@castlehomellc.com"
-                    className="text-blue-600 hover:underline"
+                    className="text-blue-700 font-semibold underline underline-offset-2 hover:text-black transition-colors"
                   >
                     invest@castlehomellc.com
                   </a>
