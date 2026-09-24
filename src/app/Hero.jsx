@@ -94,7 +94,7 @@ export default function Hero() {
 
           {/* Right Column: Hero Illustration Image */}
           <div className="lg:col-span-6 flex justify-center lg:justify-end items-center">
-            <div className="relative w-full max-w-[620px] lg:max-w-[700px] aspect-[892/613]">
+            <div className="relative w-full max-w-[650px] lg:max-w-[720px] aspect-[976/730]">
               <Image
                 src="/home.svg"
                 alt="Castle Home LLC Real Estate Solutions"
