@@ -28,42 +28,66 @@ export default function AboutPage() {
             className={`${lato.className} lg:col-span-7 space-y-6 text-[#677294] text-[16px] sm:text-[17px] leading-[1.7]`}
           >
             <p>
-              We started as a small, family-run marketing team with big ideas
-              and an even bigger passion for helping local businesses grow. From
-              late nights in our living room to launching successful campaigns
-              for friends and neighbors, we built our agency on trust, hustle,
-              and results.
+              We started Castle Home LLC with a straightforward vision: to simplify
+              the real estate process and provide dependable property solutions for
+              our community. What began as a local effort to help property owners
+              navigate complex markets has grown into a dedicated real estate
+              consultation and property acquisition company. Built on a foundation
+              of transparency, professional integrity, and tailored service, we
+              bridge the gap between property sellers and local market opportunities.
             </p>
 
             <p>
-              Over the years, our story evolved. As we helped businesses find
-              their voice and scale their presence, we realized our true
-              superpower: empowering other marketing agencies to do the same.
-              We've walked the path—navigating client expectations, platform
-              updates, tight budgets, and ambitious goals—and now we're here to
-              share the systems, strategy, and support that took us from family
-              hustle to agency partner.
+              Over the years, our services have evolved to meet the changing
+              needs of the market. As we helped more clients find practical
+              solutions for their real estate assets, we established our primary
+              objective: delivering seamless, stress-free property transitions. We
+              have walked the path—navigating changing market values, coordinating
+              professional assessments, and working within specialized timelines.
+              Today, we are proud to share our direct market insights,
+              comprehensive research, and specialized assistance to help property
+              owners move forward with absolute confidence.
             </p>
 
             <p>
-              Whether you're an agency of one or a growing team, we help you
-              scale smarter—not harder. From white-labeled campaign support and
-              sales enablement to automation, compliance, and branding—we become
-              your behind-the-scenes engine so you can focus on what you do
-              best: serving clients and growing your brand.
+              Whether you are a property owner looking for direct real estate
+              insights or a local real estate professional seeking a reliable partner
+              for your next venture, we help you streamline the path ahead. From
+              structural evaluations and market comparisons to full-service property
+              assessments, we become your dependable operational engine so you can
+              focus on making the best choices for your real estate portfolio.
             </p>
 
             <div className="pt-2">
               <p className="font-semibold text-[#1a1a1a]">
-                Let's grow, together!
+                Let's build your next real estate chapter, together.
               </p>
             </div>
 
-            <p className="text-sm text-gray-400 italic pt-2">
-              Want this tailored to a specific tone (fun, luxury, tech-savvy,
-              etc.) or for a specific audience (startup agencies, B2B-focused,
-              etc.)?
-            </p>
+            {/* SMS Communications & Privacy Disclosures */}
+            <div className="pt-6 border-t border-gray-200 space-y-3">
+              <h2
+                className={`${nunito.className} text-[20px] font-bold text-[#1a1a1a]`}
+              >
+                SMS Communications & Privacy Disclosures
+              </h2>
+              <p className="text-[14px] sm:text-[15px] leading-[1.7] text-[#677294]">
+                Castle Home LLC values your privacy. By providing your phone
+                number and interacting with our team via text messaging, you
+                consent to receive direct operational and promotional
+                communications regarding our real estate consulting and property
+                services. Message frequency varies. Message and data rates may
+                apply. Reply STOP to opt out of future messaging at any time, or
+                HELP for further assistance.
+              </p>
+              <p className="text-[14px] sm:text-[15px] leading-[1.7] text-[#677294]">
+                We protect your information with strict security protocols.
+                Personal data, including mobile phone numbers and opt-in consent
+                details, will not be shared, rented, or sold to third-party
+                entities or affiliates for marketing or promotional purposes
+                under any circumstances.
+              </p>
+            </div>
           </div>
 
           {/* Image Column */}
