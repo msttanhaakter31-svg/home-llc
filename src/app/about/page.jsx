@@ -91,13 +91,13 @@ export default function AboutPage() {
           </div>
 
           {/* Image Column */}
-          <div className="lg:col-span-5 relative w-full h-[320px] sm:h-[380px] rounded-lg overflow-hidden shadow-sm border border-gray-100">
+          <div className="lg:col-span-5 relative w-full h-[340px] sm:h-[420px] flex items-center justify-center">
             <Image
-              src="/hero-image.png"
-              alt="Team conference call presentation"
+              src="/hero-image.svg"
+              alt="Castle Home LLC property consultation"
               fill
               priority
-              className="object-cover"
+              className="object-contain"
             />
           </div>
         </div>

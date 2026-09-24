@@ -56,8 +56,8 @@ export default function Hero() {
           <div className="lg:col-span-6 flex justify-center lg:justify-end">
             <div className="relative w-full max-w-[540px] aspect-[4/3]">
               <Image
-                src="/home.png"
-                alt="Growth marketing illustration"
+                src="/home.svg"
+                alt="Castle Home LLC Real Estate Solutions"
                 fill
                 priority
                 className="object-contain"
