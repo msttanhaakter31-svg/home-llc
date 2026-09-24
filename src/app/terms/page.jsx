@@ -13,8 +13,8 @@ const lato = Lato({
 });
 
 export const metadata = {
-  title: "Terms of Service | Lets Make It Digital",
-  description: "Terms of Service for Lets Make It Digital.",
+  title: "Terms and Conditions | Castle Home LLC",
+  description: "Terms and Conditions for Castle Home LLC.",
 };
 
 export default function TermsOfService() {
@@ -38,28 +38,33 @@ export default function TermsOfService() {
           <h1
             className={`${nunito.className} text-[32px] sm:text-[40px] font-bold text-[#1f2438] tracking-tight`}
           >
-            Terms of Service
+            Terms and Conditions
           </h1>
 
           {/* Header Dates & Intro */}
           <div
             className={`${lato.className} space-y-4 text-gray-700 text-sm sm:text-base leading-relaxed`}
           >
-            <p className="font-semibold text-gray-900">Terms of Service</p>
-            <p className="text-xs text-gray-500">
-              Effective Date: [Insert Date]
+            <p className="font-semibold text-gray-900">Terms and Conditions</p>
+            <p className="text-xs text-gray-500 font-medium">
+              Effective Date: 09/24/2026
             </p>
-            <p className="text-xs text-gray-500">Last Updated: [Insert Date]</p>
+            <p className="text-xs text-gray-500 font-medium">
+              Last Updated: 09/24/2026
+            </p>
 
             <p>
-              Welcome to Lets Make It Digital. These Terms of Service
-              (&quot;Terms,&quot; &quot;Agreement&quot;) govern your use of the
-              services provided by Lets Make It Digital (&quot;Company,&quot;
-              &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;).
+              Welcome to Castle Home LLC. These Terms and Conditions (&quot;Terms&quot;)
+              govern your use of our website, products, and conditions (&ldquo;Conditions&rdquo;),
+              provided by Castle Home LLC (&ldquo;Company&rdquo;, &ldquo;we&rdquo;, &ldquo;our&rdquo;,
+              or &ldquo;us&rdquo;).
             </p>
             <p>
-              By accessing or using our Services, you agree to be bound by these
-              Terms and our Privacy Policy.
+              By accessing or using our Conditions, you agree to be bound by these
+              Terms and our{" "}
+              <Link href="/privacy" className="text-blue-600 hover:underline">
+                Privacy Policy
+              </Link>.
             </p>
           </div>
 
@@ -70,199 +75,120 @@ export default function TermsOfService() {
             {/* Section 1 */}
             <section className="space-y-3">
               <h2 className="text-lg font-bold text-[#1f2438]">
-                1. Services Provided
+                1. Conditions Provided
               </h2>
               <p>
-                Lets Make It Digital provides marketing services including, but
-                not limited to:
-              </p>
-              <p>
-                Campaign development and execution, SMS and email marketing
-                support, Automation and CRM integration, Branding, design, and
-                digital strategy, White-labeled marketing support for agencies.
-              </p>
-              <p>
-                We reserve the right to modify, suspend, or discontinue any
-                aspect of our services at any time with or without prior notice.
+                Castle Home LLC provides real estate consulting, property assessment,
+                and marketing services. We assist property owners by evaluating real
+                estate assets, providing property solutions, and connecting individuals
+                looking to sell properties with specialized real estate opportunities.
+                Our services are provided on an &quot;as-is&quot; and &quot;as-available&quot;
+                basis, subject to change or termination at our sole discretion without
+                prior notice.
               </p>
             </section>
 
             {/* Section 2 */}
             <section className="space-y-3">
               <h2 className="text-lg font-bold text-[#1f2438]">
-                2. User Obligations
+                2. Use of Conditions
               </h2>
               <p>
-                You agree to use our Services only in compliance with all
-                applicable local, state, and federal laws and regulations,
-                including A2P messaging compliance laws, CAN-SPAM Act, TCPA, and
-                other applicable laws. You shall not use our services for any
-                unlawful, deceptive, or spam activity.
+                By using our website, submitting your information, or engaging with
+                our services, you agree to use the platform solely for lawful
+                purposes. You are prohibited from submitting false, misleading, or
+                fraudulent information. Castle Home LLC reserves the right to restrict
+                or terminate access to our platform or services for any user who
+                violates these terms, engages in unauthorized scraping, or misuses
+                our submission forms.
               </p>
             </section>
 
             {/* Section 3 */}
             <section className="space-y-3">
               <h2 className="text-lg font-bold text-[#1f2438]">
-                3. SMS & Messaging Terms
+                3. SMS &amp; Messaging Terms
               </h2>
               <p>
-                If you use our Services to send SMS messages or access messaging
-                platforms:
+                Castle Home LLC provides specialized text messaging updates regarding
+                property inquiries, scheduling valuation appointments, and delivering
+                tailored property acquisition offers. You can cancel the SMS service
+                at any time. Just text &quot;<strong>STOP</strong>&quot; to{" "}
+                <a
+                  href="tel:6232123077"
+                  className="font-semibold text-gray-900 hover:underline"
+                >
+                  (623)-212-3077
+                </a>.
+                After you send the SMS message &quot;<strong>STOP</strong>&quot; to us,
+                we will send you an SMS message to confirm that you have been
+                unsubscribed. After this, you will no longer receive SMS messages
+                from us. If you want to join again, just sign up as you did the first
+                time and we will start sending SMS messages to you again.
               </p>
               <p>
-                Users must explicit opt-in prior to receiving messages via text.
-                You must include opt-out language such as &quot;Reply STOP to
-                unsubscribe&quot; on every message. Message and data rates may
-                apply depending on the mobile carrier provided. You agree to
-                abide by the messaging policy guidelines provided.
-              </p>
-              <p>
-                We do not guarantee message delivery speeds, network uptime, or
-                full carrier delivery of text messages.
+                If you are experiencing issues with the messaging program you can
+                reply with the keyword <strong>HELP</strong> for more assistance,
+                or you can get help directly at{" "}
+                <a
+                  href="tel:6232123077"
+                  className="text-blue-600 hover:underline"
+                >
+                  (623)-212-3077
+                </a>{" "}
+                or{" "}
+                <a
+                  href="mailto:info@letsmakeitdigital.com"
+                  className="text-blue-600 hover:underline"
+                >
+                  info@letsmakeitdigital.com
+                </a>.
+                Carriers are not liable for delayed or undelivered messages. As
+                always, message and data rates may apply for any messages sent to
+                you from us and to us from you. You will receive recurring messages
+                based on your account activity and inquiries. If you have any
+                questions about your text plan or data plan, it is best to contact
+                your wireless provider. If you have any questions regarding privacy,
+                please read our privacy policy:{" "}
+                <Link
+                  href="/privacy"
+                  className="text-blue-600 font-semibold hover:underline"
+                >
+                  Privacy Policy
+                </Link>.
               </p>
             </section>
-
-            <hr className="border-gray-300 my-6" />
 
             {/* Section 4 */}
-            <section className="space-y-3">
+            <section className="space-y-3 border-t border-gray-200 pt-6">
               <h2 className="text-lg font-bold text-[#1f2438]">
-                4. Client Responsibilities
-              </h2>
-              <p>As a client using our services:</p>
-              <p>
-                You agree to provide timely communication, required information,
-                domain access, required creative content, and approvals for work
-                to move forward in a timely manner according to project
-                timelines.
-              </p>
-            </section>
-
-            {/* Section 5 */}
-            <section className="space-y-3">
-              <h2 className="text-lg font-bold text-[#1f2438]">
-                5. Payment Terms
+                4. Contact Information
               </h2>
               <p>
-                All payments for services are due according to the agreed-upon
-                proposal or invoice. Late payments may incur late fees or result
-                in temporary suspension of services.
+                If you have any questions, inquiries, or need clarification
+                regarding these Terms and Conditions, please contact Castle Home LLC at:
               </p>
-            </section>
-
-            {/* Section 6 */}
-            <section className="space-y-3">
-              <h2 className="text-lg font-bold text-[#1f2438]">
-                6. Intellectual Property
-              </h2>
-              <p>
-                All materials, strategies, graphics, and content created by Lets
-                Make It Digital remain our intellectual property until paid in
-                full. Upon final payment, ownership rights transfer to the
-                client, excluding proprietary software, templates, or workflows
-                used in rendering the service.
-              </p>
-            </section>
-
-            {/* Section 7 */}
-            <section className="space-y-3">
-              <h2 className="text-lg font-bold text-[#1f2438]">
-                7. Confidentiality
-              </h2>
-              <p>
-                Both parties agree to maintain the confidentiality of
-                proprietary information shared during the scope of the
-                engagement, unless disclosure is required by law or agreed to in
-                writing.
-              </p>
-            </section>
-
-            {/* Section 8 */}
-            <section className="space-y-3">
-              <h2 className="text-lg font-bold text-[#1f2438]">
-                8. Limitation of Liability
-              </h2>
-              <p>
-                To the maximum extent permitted by applicable law, Lets Make It
-                Digital shall not be liable for any indirect, incidental,
-                consequential, or punitive damages arising out of your use or
-                inability to use our services.
-              </p>
-            </section>
-
-            {/* Section 9 */}
-            <section className="space-y-3">
-              <h2 className="text-lg font-bold text-[#1f2438]">
-                9. Termination
-              </h2>
-              <p>
-                We may terminate or suspend access immediately if you breach
-                these Terms. Upon termination, your right to use our Services
-                will cease immediately, and all outstanding payments remain due.
-              </p>
-            </section>
-
-            {/* Section 10 */}
-            <section className="space-y-3">
-              <h2 className="text-lg font-bold text-[#1f2438]">
-                10. Governing Law
-              </h2>
-              <p>
-                These Terms shall be governed by and construed in accordance
-                with the laws of the State of [Insert State], without regard to
-                its conflict of law provisions.
-              </p>
-            </section>
-
-            <hr className="border-gray-300 my-6" />
-
-            {/* Section 11 */}
-            <section className="space-y-3">
-              <h2 className="text-lg font-bold text-[#1f2438]">
-                11. Changes to These Terms
-              </h2>
-              <p>
-                We reserve the right to modify these Terms at any time. Any
-                changes will be posted on this page, and your continued use of
-                our Services constitutes acceptance of the modified Terms.
-              </p>
-            </section>
-
-            {/* Section 12 */}
-            <section className="space-y-3">
-              <h2 className="text-lg font-bold text-[#1f2438]">
-                12. Contact Us
-              </h2>
-              <p>
-                If you have any questions regarding these Terms, please contact
-                us at:
-              </p>
-
-              <div className="space-y-2 pt-2">
+              <div className="space-y-1.5 pt-1 text-sm sm:text-base">
                 <p>
-                  Email:{" "}
+                  <strong className="text-gray-900">Company:</strong> Castle Home LLC
+                </p>
+                <p>
+                  <strong className="text-gray-900">Phone:</strong>{" "}
                   <a
-                    href="mailto:support@letsmakeitdigital.com"
-                    className="text-blue-600 underline"
+                    href="tel:6232123077"
+                    className="text-blue-600 hover:underline"
                   >
-                    support@letsmakeitdigital.com
+                    (623)-212-3077
                   </a>
                 </p>
                 <p>
-                  Phone:{" "}
+                  <strong className="text-gray-900">Email:</strong>{" "}
                   <a
-                    href="tel:+18005550199"
-                    className="text-gray-800 hover:underline"
+                    href="mailto:info@letsmakeitdigital.com"
+                    className="text-blue-600 hover:underline"
                   >
-                    +1 (800) 555-0199
+                    info@letsmakeitdigital.com
                   </a>
-                </p>
-                <p>
-                  Website:{" "}
-                  <Link href="/" className="text-blue-600 underline">
-                    www.letsmakeitdigital.com
-                  </Link>
                 </p>
               </div>
             </section>
