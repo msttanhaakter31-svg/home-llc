@@ -71,10 +71,10 @@ export default function Footer() {
           {/* Office */}
           <div className="flex items-center justify-center sm:justify-start gap-2">
             <span className="text-base">📍</span>
-            <div>
-              <p className="font-semibold">Office:</p>
-              <p className="opacity-90">4539 N 22nd St, Ste N</p>
-            </div>
+            <p>
+              <span className="font-semibold">Office: </span>
+              <span className="opacity-90">4539 N 22nd St, Ste N</span>
+            </p>
           </div>
 
           {/* Call */}
@@ -105,8 +105,8 @@ export default function Footer() {
           {/* Site */}
           <div className="flex items-center justify-center sm:justify-start gap-2">
             <span className="text-base">🌐</span>
-            <div>
-              <p className="font-semibold">Site:</p>
+            <p>
+              <span className="font-semibold">Site: </span>
               <a
                 href="https://castlehomellc.com"
                 target="_blank"
@@ -115,7 +115,7 @@ export default function Footer() {
               >
                 castlehomellc.com
               </a>
-            </div>
+            </p>
           </div>
         </div>
       </div>

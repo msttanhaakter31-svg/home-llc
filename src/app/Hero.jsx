@@ -18,9 +18,9 @@ export default function Hero() {
       <div className="absolute inset-0 pointer-events-none opacity-40">
         <Image
           src="/image_bg.png"
-          alt="Background Lines Pattern"
+          alt="Background Real Estate Pattern"
           fill
-          className="object-cover object-left"
+          className="object-cover object-center"
           priority
         />
       </div>
