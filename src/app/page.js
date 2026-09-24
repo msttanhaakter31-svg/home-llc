@@ -1,5 +1,4 @@
 import Hero from "./Hero";
-import Contact from "./Contact";
 import { Nunito } from "next/font/google";
 
 const nunito = Nunito({
