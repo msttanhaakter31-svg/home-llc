@@ -13,14 +13,14 @@ const lato = Lato({
 });
 
 export const metadata = {
-  title: "Privacy Policy | Lets Make It Digital",
-  description: "Privacy Policy for Lets Make It Digital.",
+  title: "Privacy Policy | Castle Home LLC",
+  description: "Privacy Policy for Castle Home LLC.",
 };
 
 export default function PrivacyPolicy() {
   return (
     <div className="relative min-h-screen">
-      {/* Fixed Full-Screen Background Container (matches .bg-fixed & .bgCover) */}
+      {/* Fixed Full-Screen Background Container */}
       <div className="fixed inset-0 -z-10 bg-white pointer-events-none">
         <Image
           src="/image_bg.png"
@@ -41,26 +41,27 @@ export default function PrivacyPolicy() {
             Privacy Policy
           </h1>
 
-          {/* Introduction */}
+          {/* Header Dates & Intro */}
           <div
             className={`${lato.className} space-y-4 text-gray-700 text-sm sm:text-base leading-relaxed`}
           >
             <p className="font-semibold text-gray-900">Privacy Policy</p>
-            <p className="text-xs text-gray-500">
-              Effective Date: [Insert Date]
+            <p className="text-xs text-gray-500 font-medium">
+              Effective Date: September 24, 2026
             </p>
-            <p className="text-xs text-gray-500">Last Updated: [Insert Date]</p>
+            <p className="text-xs text-gray-500 font-medium">
+              Last Updated: September 24, 2026
+            </p>
 
             <p>
-              Lets Make It Digital (&quot;we,&quot; &quot;our,&quot; or
-              &quot;us&quot;) is committed to protecting your privacy. This
-              Privacy Policy explains how we collect, use, disclose, and
-              safeguard your information when you visit our website, use our
-              services, or engage with our marketing solutions.
-            </p>
-            <p>
-              By accessing or using our services, you agree to this Privacy
-              Policy.
+              Castle Home LLC (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;)
+              operates the website and text messaging services associated with
+              our residential property consulting, consulting assistance, and
+              valuation services. We are fully committed to protecting your
+              privacy. This Privacy Policy explains how we collect, use, and
+              safeguard your personal information when you visit our website,
+              request property valuation estimates, or opt into our mobile
+              communication programs.
             </p>
           </div>
 
@@ -74,27 +75,31 @@ export default function PrivacyPolicy() {
                 1. Information We Collect
               </h2>
               <p>
-                We may collect personal information that you voluntarily provide
-                to us, including:
+                We only collect personal information that you voluntarily
+                provide to us through our website contact forms, property
+                valuation submission fields, or interactive tools. This
+                information may include:
               </p>
-              <ul className="list-disc pl-5 space-y-1">
-                <li>Contact Information: Name, email address, phone number.</li>
+              <ul className="list-disc pl-5 space-y-2">
                 <li>
-                  Business Information: Company name, website URL, job title,
-                  and details about your marketing needs.
+                  <strong className="text-gray-900">Identity Data:</strong> Your
+                  name, email address, and mailing address.
                 </li>
                 <li>
-                  Communication Data: Messages, inquiries, or feedback sent
-                  through forms, chat, or email.
+                  <strong className="text-gray-900">Property Data:</strong> Real
+                  estate details, property addresses, and details required for
+                  evaluating housing trends or property consultations.
                 </li>
                 <li>
-                  Payment Information: If applicable, billing details for paid
-                  services (processed securely via third-party processors).
+                  <strong className="text-gray-900">
+                    Contact &amp; Mobile Data:
+                  </strong>{" "}
+                  Your phone number and explicit SMS opt-in consent records.
                 </li>
               </ul>
             </section>
 
-            <hr className="border-gray-300 my-6" />
+            <hr className="border-gray-200" />
 
             {/* Section 2 */}
             <section className="space-y-3">
@@ -102,213 +107,193 @@ export default function PrivacyPolicy() {
                 2. How We Use Your Information
               </h2>
               <p>
-                We use the collected information for the following purposes:
+                We use the information we collect strictly to manage our
+                internal operations and provide you with requested real estate
+                consulting services. Specifically, your data is used to:
               </p>
-              <ul className="list-disc pl-5 space-y-1">
+              <ul className="list-disc pl-5 space-y-2">
                 <li>
-                  To provide, operate, and maintain our digital marketing and
-                  agency support services.
+                  Process and respond to your direct real estate inquiries or
+                  property valuation requests.
                 </li>
                 <li>
-                  To communicate with you regarding inquiries, appointments,
-                  services, updates, or promotional offers.
+                  Schedule consultations, coordinate appointments, and deliver
+                  requested consumer support.
                 </li>
                 <li>
-                  To deliver tailored marketing solutions, campaign support, and
-                  automation integrations.
+                  Send transactional updates, localized housing insights, and
+                  property notifications (only where explicit consent is
+                  provided).
                 </li>
-                <li>To process transactions and manage customer accounts.</li>
-                <li>To comply with legal and regulatory obligations.</li>
               </ul>
             </section>
+
+            <hr className="border-gray-200" />
 
             {/* Section 3 */}
             <section className="space-y-3">
               <h2 className="text-lg font-bold text-[#1f2438]">
-                3. SMS Marketing & Compliance
+                3. Absolute Restriction on Data Sharing &amp; Selling
               </h2>
-              <p>If you opt-in to receive SMS messages from us:</p>
-              <ul className="list-disc pl-5 space-y-1">
-                <li>
-                  We will use your phone number to send service updates,
-                  appointment reminders, and promotional messages via A2P 10DLC
-                  compliant platforms.
-                </li>
-                <li>Message and data rates may apply.</li>
-                <li>
-                  You may opt-out at any time by replying STOP to any message or
-                  contacting us at{" "}
-                  <a
-                    href="mailto:support@letsmakeitdigital.com"
-                    className="text-blue-600 underline"
-                  >
-                    support@letsmakeitdigital.com
-                  </a>
-                  .
-                </li>
-              </ul>
-              <p className="font-medium text-gray-900 pt-1">
-                A2P 10DLC Commitment:
-              </p>
               <p>
-                We do not share, sell, or rent SMS opt-in data or phone numbers
-                to third parties for marketing purposes.
+                Castle Home LLC does not sell, rent, trade, lease, or share
+                consumer information, leads, or personal data with any third
+                parties or affiliates for marketing, promotional, or any other
+                commercial purposes. Your personal data is kept strictly
+                confidential within our organization.
               </p>
             </section>
+
+            <hr className="border-gray-200" />
 
             {/* Section 4 */}
             <section className="space-y-3">
               <h2 className="text-lg font-bold text-[#1f2438]">
-                4. How We Share Your Information
+                4. SMS &amp; Mobile Text Messaging Policy
               </h2>
               <p>
-                We do not sell your personal information. We may share
-                information in limited circumstances:
+                We treat text messaging originator opt-in data with the highest
+                level of security and privacy.
               </p>
-              <ul className="list-disc pl-5 space-y-1">
-                <li>
-                  With Service Providers: Trusted third-party vendors who assist
-                  in operating our website, managing CRMs, processing payments,
-                  or delivering email/SMS marketing (e.g., Twilio, Mailchimp,
-                  Stripe).
-                </li>
-                <li>
-                  For Legal Reasons: To comply with applicable laws, court
-                  orders, or governmental regulations.
-                </li>
-                <li>
-                  Business Transfers: In connection with any merger, sale of
-                  company assets, financing, or acquisition.
-                </li>
-              </ul>
+              <div className="bg-gray-50 border border-gray-200 p-5 rounded-lg space-y-3 mt-2">
+                <p className="font-semibold text-gray-900">
+                  Strict Mobile Privacy Mandates:
+                </p>
+                <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                  <li>
+                    No mobile information will be shared with third parties or
+                    affiliates for marketing/promotional purposes.
+                  </li>
+                  <li>
+                    Text messaging originator opt-in data and consent will not
+                    be shared with any third parties, except for aggregators and
+                    providers of the Text Message services.
+                  </li>
+                  <li>
+                    No mobile information will be shared with third
+                    parties/affiliates for marketing/promotional purposes.
+                    Information sharing to subcontractors in support services,
+                    such as customer service, is permitted. All other use case
+                    categories exclude text messaging originator opt-in data
+                    and consent; this information will not be shared with any
+                    third parties.
+                  </li>
+                </ul>
+              </div>
             </section>
+
+            <hr className="border-gray-200" />
 
             {/* Section 5 */}
             <section className="space-y-3">
               <h2 className="text-lg font-bold text-[#1f2438]">
-                5. Cookies and Tracking Technologies
+                5. Data Security Practices
               </h2>
               <p>
-                We may use cookies, tracking pixels, and web beacons to collect
-                information about your browsing activities to analyze website
-                traffic and optimize your user experience.
+                We implement administrative, technical, and physical security
+                measures to safeguard your personal data against unauthorized
+                access, destruction, loss, alteration, or disclosure. Access to
+                consumer details is strictly limited to authorized internal
+                personnel who require the data to fulfill your real estate
+                service requests.
               </p>
             </section>
+
+            <hr className="border-gray-200" />
 
             {/* Section 6 */}
             <section className="space-y-3">
               <h2 className="text-lg font-bold text-[#1f2438]">
-                6. Data Security
+                6. Cookies and Tracking Information
               </h2>
               <p>
-                We implement reasonable administrative, technical, and physical
-                security measures to protect your personal information against
-                unauthorized access, alteration, disclosure, or destruction.
+                Our website may utilize standard internet cookies, web beacons,
+                and tracking pixels to optimize your browsing experience and
+                analyze general website traffic patterns. These technical tools
+                collect non-identifiable browser attributes and do not capture
+                or store your mobile phone number, SMS consent metrics, or
+                personal identity details. You can configure your internet
+                browser to refuse cookies, though certain interactive features
+                on our site may become unavailable.
               </p>
             </section>
+
+            <hr className="border-gray-200" />
 
             {/* Section 7 */}
             <section className="space-y-3">
               <h2 className="text-lg font-bold text-[#1f2438]">
-                7. Your Rights
+                7. Your Privacy Rights &amp; Opt-Out Controls
               </h2>
-              <p>
-                Depending on your location, you may have rights regarding your
-                personal data, including the right to access, correct, or delete
-                your personal information.
-              </p>
-              <p>To exercise these rights, please contact us at:</p>
-              <p>
-                Email:{" "}
-                <a
-                  href="mailto:support@letsmakeitdigital.com"
-                  className="text-blue-600 underline"
-                >
-                  support@letsmakeitdigital.com
-                </a>
-              </p>
-              <p>
-                Website:{" "}
-                <Link href="/" className="text-blue-600 underline">
-                  www.letsmakeitdigital.com
-                </Link>
-              </p>
+              <p>You have complete control over your communication preferences:</p>
+              <ul className="list-disc pl-5 space-y-2">
+                <li>
+                  <strong className="text-gray-900">SMS Opt-Out:</strong> You
+                  can cancel or revoke text message consent at any time by
+                  replying <strong>STOP</strong> to any text message received from
+                  us. A final confirmation message will be sent, and no further
+                  mobile messages will be delivered.
+                </li>
+                <li>
+                  <strong className="text-gray-900">Customer Support:</strong>{" "}
+                  For questions, data correction requests, or information
+                  regarding this policy, you may text <strong>HELP</strong> or
+                  contact us directly using the details provided below.
+                </li>
+              </ul>
             </section>
+
+            <hr className="border-gray-200" />
 
             {/* Section 8 */}
             <section className="space-y-3">
               <h2 className="text-lg font-bold text-[#1f2438]">
-                8. Third-Party Links
+                8. Updates to This Privacy Policy
               </h2>
               <p>
-                Our website may contain links to external sites. We are not
-                responsible for the privacy practices or content of these
-                third-party services.
+                We reserve the right to modify this Privacy Policy to ensure
+                continued compliance with changing telecom carrier regulations
+                and federal frameworks. Any updates will be posted directly to
+                this web page with a revised &quot;Effective Date&quot; at the
+                top.
               </p>
             </section>
 
-            <hr className="border-gray-300 my-6" />
+            <hr className="border-gray-200" />
 
             {/* Section 9 */}
             <section className="space-y-3">
               <h2 className="text-lg font-bold text-[#1f2438]">
-                9. Children&apos;s Privacy
+                9. Contact Information
               </h2>
               <p>
-                Our services are not intended for individuals under the age of
-                18. We do not knowingly collect personal information from
-                children.
-              </p>
-            </section>
-
-            {/* Section 10 */}
-            <section className="space-y-3">
-              <h2 className="text-lg font-bold text-[#1f2438]">
-                10. Changes to This Privacy Policy
-              </h2>
-              <p>
-                We may update this Privacy Policy from time to time. Any changes
-                will be posted on this page with an updated &quot;Last
-                Updated&quot; date.
-              </p>
-            </section>
-
-            <hr className="border-gray-300 my-6" />
-
-            {/* Section 11 */}
-            <section className="space-y-3">
-              <h2 className="text-lg font-bold text-[#1f2438]">
-                11. Contact Us
-              </h2>
-              <p>
-                If you have questions or concerns about this Privacy Policy,
+                For questions or concerns regarding your data or this policy,
                 please contact us at:
               </p>
-
-              <div className="space-y-2 pt-2">
+              <div className="space-y-1.5 pt-1 text-sm sm:text-base">
                 <p>
-                  Email:{" "}
+                  <strong className="text-gray-900">Business Name:</strong>{" "}
+                  Castle Home LLC
+                </p>
+                <p>
+                  <strong className="text-gray-900">Website Domain:</strong>{" "}
                   <a
-                    href="mailto:support@letsmakeitdigital.com"
-                    className="text-blue-600 underline"
+                    href="https://castlehomellc.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
                   >
-                    support@letsmakeitdigital.com
+                    castlehomellc.com
                   </a>
                 </p>
                 <p>
-                  Phone:{" "}
+                  <strong className="text-gray-900">Contact Email:</strong>{" "}
                   <a
-                    href="tel:+18005550199"
-                    className="text-gray-800 hover:underline"
+                    href="mailto:nvest@castlehomellc.com"
+                    className="text-blue-600 hover:underline"
                   >
-                    +1 (800) 555-0199
+                    nvest@castlehomellc.com
                   </a>
-                </p>
-                <p>
-                  Website:{" "}
-                  <Link href="/" className="text-blue-600 underline">
-                    www.letsmakeitdigital.com
-                  </Link>
                 </p>
               </div>
             </section>
