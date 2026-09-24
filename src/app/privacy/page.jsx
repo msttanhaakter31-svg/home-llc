@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Nunito, Lato } from "next/font/google";
 
 const nunito = Nunito({
