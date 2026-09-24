@@ -65,6 +65,7 @@ export default function ConsultationPage() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+  const [assistanceNeeds, setAssistanceNeeds] = useState("");
 
   // Checkboxes State with Exact User Legal Copy
   const [agreeTransactional, setAgreeTransactional] = useState(false);
@@ -126,6 +127,9 @@ export default function ConsultationPage() {
     formData.append("Client Name", name);
     formData.append("Client Email", email);
     formData.append("Phone Number", phone ? phone : "Not provided");
+    if (assistanceNeeds) {
+      formData.append("Real Estate Needs", assistanceNeeds);
+    }
 
     const formattedDate = selectedDate.toLocaleDateString("en-US", {
       weekday: "short",
@@ -161,6 +165,7 @@ export default function ConsultationPage() {
         setName("");
         setEmail("");
         setPhone("");
+        setAssistanceNeeds("");
         setAgreeTransactional(false);
         setAgreeMarketing(false);
       } else {
@@ -480,6 +485,19 @@ export default function ConsultationPage() {
                   />
                 </div>
 
+                {/* How can we assist you with your real estate needs? (optional) */}
+                <div className="relative">
+                  <textarea
+                    id="consultationNeeds"
+                    name="Real Estate Needs (optional)"
+                    rows={3}
+                    value={assistanceNeeds}
+                    onChange={(e) => setAssistanceNeeds(e.target.value)}
+                    placeholder="How can we assist you with your real estate needs? (optional)"
+                    className="w-full bg-[#f0f4f9] hover:bg-[#e8eef5] focus:bg-white border border-transparent focus:border-gray-400 focus:ring-4 focus:ring-gray-300/30 rounded-xl px-4 py-3.5 text-[15px] text-gray-800 placeholder:text-gray-400 placeholder:font-normal transition-all outline-none resize-none"
+                  ></textarea>
+                </div>
+
                 {/* Two Exact Checkboxes Provided by User */}
                 <div className="space-y-3.5 pt-2">
                   {/* Checkbox 1: Transactional */}
@@ -499,7 +517,7 @@ export default function ConsultationPage() {
                     </label>
                   </div>
 
-                  {/* Checkbox 2: Marketing & Insights */}
+                  {/* Checkbox 2: Portfolio & Consulting Reviews */}
                   <div className="flex items-start gap-3">
                     <input
                       type="checkbox"
@@ -512,7 +530,7 @@ export default function ConsultationPage() {
                       htmlFor="agreeMarketing"
                       className={`${lato.className} text-xs text-gray-500 leading-relaxed cursor-pointer`}
                     >
-                      I consent to receive text messages from Castle Home LLC related to real estate market insights, new property availability notifications, and special service updates. Message frequency may vary. Message &amp; data rates may apply. Text HELP for assistance. Reply STOP to unsubscribe at any time.
+                      I consent to receive text messages from Castle Home LLC related to scheduled property evaluations, client-initiated market consulting updates, and administrative portfolio reviews. Message frequency may vary. Msg &amp; data rates may apply. Text HELP for assistance. Reply STOP to unsubscribe at any time.
                     </label>
                   </div>
 

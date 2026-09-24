@@ -138,7 +138,7 @@ export default function Contact() {
 
             {/* Unbundled Explicit Consent Checkboxes (A2P 10DLC & TCPA Compliant) */}
             <div className="space-y-4 pt-2">
-              {/* Checkbox 1: Transactional / Booking SMS Updates */}
+              {/* Checkbox 1: Transactional */}
               <label className="flex items-start gap-3 cursor-pointer group">
                 <input
                   type="checkbox"
@@ -147,14 +147,11 @@ export default function Contact() {
                   className="mt-0.5 h-4 w-4 rounded-sm border-gray-300 text-black focus:ring-0 cursor-pointer accent-black shrink-0"
                 />
                 <span className="text-xs text-gray-600 leading-normal">
-                  I agree to receive automated transactional and booking alert
-                  SMS messages from [Company Name] regarding my request. Message
-                  and data rates may apply. Reply STOP to cancel or HELP for
-                  help.
+                  I agree to receive transactional text messages from Castle Home LLC, including responses to my property inquiries, appointment scheduling confirmation, and customer support updates. Message frequency may vary. Message &amp; data rates may apply. Text HELP for assistance. Reply STOP to unsubscribe at any time.
                 </span>
               </label>
 
-              {/* Checkbox 2: Marketing & Promotional SMS Updates */}
+              {/* Checkbox 2: Portfolio & Consulting Reviews */}
               <label className="flex items-start gap-3 cursor-pointer group">
                 <input
                   type="checkbox"
@@ -163,10 +160,7 @@ export default function Contact() {
                   className="mt-0.5 h-4 w-4 rounded-sm border-gray-300 text-black focus:ring-0 cursor-pointer accent-black shrink-0"
                 />
                 <span className="text-xs text-gray-500 leading-normal">
-                  I agree to receive recurring promotional SMS messages,
-                  updates, and newsletters from [Company Name]. Consent is not a
-                  condition of purchase. Message frequency varies. Text STOP to
-                  unsubscribe, HELP for assistance.
+                  I consent to receive text messages from Castle Home LLC related to scheduled property evaluations, client-initiated market consulting updates, and administrative portfolio reviews. Message frequency may vary. Msg &amp; data rates may apply. Text HELP for assistance. Reply STOP to unsubscribe at any time.
                 </span>
               </label>
 
