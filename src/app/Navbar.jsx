@@ -124,7 +124,7 @@ export default function Navbar() {
         <h1
           className={`${nunito.className} text-2xl sm:text-[32px] font-bold text-black tracking-tight`}
         >
-          <strong>Welcome to Lets Make It Digital!</strong>
+          <strong>Welcome to Castle Home LLC</strong>
         </h1>
       </div>
     </nav>

@@ -32,16 +32,14 @@ export default function Hero() {
             <h2
               className={`${nunito.className} text-[28px] text-black leading-tight`}
             >
-              Learn how to Grow a Fueled <br className="hidden sm:inline" />
-              Marketing Agency
+              Streamlined Property Solutions & <br className="hidden sm:inline" />
+              Real Estate Investments
             </h2>
 
             <p
-              className={`${lato.className} text-[18px] text-[#677294] leading-[1.6em] pb-2 max-w-md`}
+              className={`${lato.className} text-[18px] text-[#677294] leading-[1.6em] pb-2 max-w-lg`}
             >
-              Want this tailored to a specific tone (fun, luxury, tech-savvy,
-              etc.) or for a specific audience (startup agencies, B2B-focused,
-              etc.)? Hire Lets Make It Digital!
+              We provide direct property evaluation, market consulting, and real estate acquisition services. Whether you are selling an asset or expanding your real estate portfolio, we make the process simple and transparent.
             </p>
 
             <div>
@@ -49,7 +47,7 @@ export default function Hero() {
                 href="#contact"
                 className="inline-block bg-[#FF8A73] text-white text-[18px] sm:text-[20px] font-bold px-[28px] py-[14px] rounded-lg shadow-[0_10px_20px_rgba(0,0,0,0.15)] hover:opacity-90 transition-opacity"
               >
-                Schedule Your Discovery Call
+                Request a Property Consultation
               </a>
             </div>
           </div>
